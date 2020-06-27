@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 
-class Fish extends Component {
-    render() {
-        return (
-            <h1>Fish</h1>
-        );
-    }
-}
+import CritterUtil from '../../scripts/critterUtil';
+import CritterTable from '../../components/Tables/CritterTable/CritterTable';
+
+const Fish = (props) => (
+    <React.Fragment>
+        <h1>Fish</h1>
+        <CritterTable critterData={CritterUtil.fishData}/>
+    </React.Fragment>
+);
 
 export default Fish;

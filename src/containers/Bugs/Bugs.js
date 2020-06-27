@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 
-class Bugs extends Component {
-    render() {
-        return (
-            <h1>Bugs</h1>
-        );
-    }
-}
+import CritterUtil from '../../scripts/critterUtil';
+import CritterTable from '../../components/Tables/CritterTable/CritterTable';
+
+const Bugs = (props) => (
+    <React.Fragment>
+        <h1>Bugs</h1>
+        <CritterTable critterData={CritterUtil.bugData}/>
+    </React.Fragment>
+);
 
 export default Bugs;

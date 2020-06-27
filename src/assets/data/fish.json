@@ -1,7 +1,7 @@
 [
     {
         "name": "Anchovy",
-        "image": "/icons/fish/anchovy.png",
+        "image": "assets/images/icons/fish/anchovy.png",
         "price": 200,
         "location": "Sea",
         "months": [1,2,3,4,5,6,7,8,9,10,11,12],
@@ -14,7 +14,7 @@
     },
     {
         "name": "Angelfish",
-        "image": "/icons/fish/angelfish.png",
+        "image": "assets/images/icons/fish/angelfish.png",
         "price": 3000,
         "location": "River",
         "months": [5,6,7,8,9,10],
@@ -27,7 +27,7 @@
     },
     {
         "name": "Arapaima",
-        "image": "/icons/fish/arapaima.png",
+        "image": "assets/images/icons/fish/arapaima.png",
         "price": 10000,
         "location": "River",
         "months": [6,7,8,9],
@@ -40,7 +40,7 @@
     },
     {
         "name": "Arowana",
-        "image": "/icons/fish/arowana.png",
+        "image": "assets/images/icons/fish/arowana.png",
         "price": 10000,
         "location": "River",
         "months": [6,7,8,9],
@@ -53,14 +53,14 @@
     },
     {
         "name": "Barred Knifejaw",
-        "image": "/icons/fish/barred-knifejaw.png",
+        "image": "assets/images/icons/fish/barred-knifejaw.png",
         "price": 5000,
         "location": "Sea",
         "months": [3,4,5,6,7,8,9,10,11]
     },
     {
         "name": "Barreleye",
-        "image": "/icons/fish/barreleye.png",
+        "image": "assets/images/icons/fish/barreleye.png",
         "price": 15000,
         "location": "Sea",
         "months": [1,2,3,4,5,6,7,8,9,10,11,12],
@@ -73,7 +73,7 @@
     },
     {
         "name": "Betta",
-        "image": "/icons/fish/betta.png",
+        "image": "assets/images/icons/fish/betta.png",
         "price": 2500,
         "location": "River",
         "months": [5,6,7,8,9,10],
@@ -86,21 +86,21 @@
     },
     {
         "name": "Bitterling",
-        "image": "/icons/fish/bitterling.png",
+        "image": "assets/images/icons/fish/bitterling.png",
         "price": 900,
         "location": "River",
         "months": [1,2,3,11,12]
     },
     {
         "name": "Black Bass",
-        "image": "/icons/fish/black-bass.png",
+        "image": "assets/images/icons/fish/black-bass.png",
         "price": 320,
         "location": "River",
         "months": [1,2,3,4,5,6,7,8,9,10,11,12]
     },
     {
         "name": "Blowfish",
-        "image": "/icons/fish/blowfish.png",
+        "image": "assets/images/icons/fish/blowfish.png",
         "price": 5000,
         "location": "Sea",
         "months": [1,2,11,12],
@@ -113,14 +113,14 @@
     },
     {
         "name": "Blue Marlin",
-        "image": "/icons/fish/blue-marlin.png",
+        "image": "assets/images/icons/fish/blue-marlin.png",
         "price": 10000,
         "location": "Pier",
         "months": [1,2,3,4,7,8,9,11,12]
     },
     {
         "name": "Bluegill",
-        "image": "/icons/fish/bluegill.png",
+        "image": "assets/images/icons/fish/bluegill.png",
         "price": 180,
         "location": "River",
         "months": [1,2,3,4,5,6,7,8,9,10,11,12],
@@ -133,21 +133,21 @@
     },
     {
         "name": "Butterfly Fish",
-        "image": "/icons/fish/butterfly-fish.png",
+        "image": "assets/images/icons/fish/butterfly-fish.png",
         "price": 1000,
         "location": "Sea",
         "months": [4,5,6,7,8,9]
     },
     {
         "name": "Carp",
-        "image": "/icons/fish/carp.png",
+        "image": "assets/images/icons/fish/carp.png",
         "price": 300,
         "location": "Pond",
         "months": [1,2,3,4,5,6,7,8,9,10,11,12]
     },
     {
         "name": "Catfish",
-        "image": "/icons/fish/catfish.png",
+        "image": "assets/images/icons/fish/catfish.png",
         "price": 800,
         "location": "Pond",
         "months": [5,6,7,8,9,10],
@@ -160,7 +160,7 @@
     },
     {
         "name": "Char",
-        "image": "/icons/fish/char.png",
+        "image": "assets/images/icons/fish/char.png",
         "price": 3800,
         "location": "River (Clifftop) Pond",
         "months": [3,4,5,6,9,10,11],
@@ -173,7 +173,7 @@
     },
     {
         "name": "Cherry Salmon",
-        "image": "/icons/fish/cherry-salmon.png",
+        "image": "assets/images/icons/fish/cherry-salmon.png",
         "price": 800,
         "location": "River (Clifftop)",
         "months": [3,4,5,6,9,10,11],
@@ -186,42 +186,42 @@
     },
     {
         "name": "Clown Fish",
-        "image": "/icons/fish/clown-fish.png",
+        "image": "assets/images/icons/fish/clown-fish.png",
         "price": 650,
         "location": "Sea",
         "months": [4,5,6,7,8,9]
     },
     {
         "name": "Coelacanth",
-        "image": "/icons/fish/coelacanth.png",
+        "image": "assets/images/icons/fish/coelacanth.png",
         "price": 15000,
         "location": "Sea",
         "months": [1,2,3,4,5,6,7,8,9,10,11,12]
     },
     {
         "name": "Crawfish",
-        "image": "/icons/fish/crawfish.png",
+        "image": "assets/images/icons/fish/crawfish.png",
         "price": 200,
         "location": "Pond",
         "months": [4,5,6,7,8,9]
     },
     {
         "name": "Crucian Carp",
-        "image": "/icons/fish/crucian-carp.png",
+        "image": "assets/images/icons/fish/crucian-carp.png",
         "price": 160,
         "location": "River",
         "months": [1,2,3,4,5,6,7,8,9,10,11,12]
     },
     {
         "name": "Dab",
-        "image": "/icons/fish/dab.png",
+        "image": "assets/images/icons/fish/dab.png",
         "price": 300,
         "location": "Sea",
         "months": [1,2,3,4,10,11,12]
     },
     {
         "name": "Dace",
-        "image": "/icons/fish/dace.png",
+        "image": "assets/images/icons/fish/dace.png",
         "price": 192,
         "location": "River",
         "months": [1,2,3,4,5,6,7,8,9,10,11,12],
@@ -234,7 +234,7 @@
     },
     {
         "name": "Dorado",
-        "image": "/icons/fish/dorado.png",
+        "image": "assets/images/icons/fish/dorado.png",
         "price": 15000,
         "location": "River",
         "months": [6,7,8,9],
@@ -247,7 +247,7 @@
     },
     {
         "name": "Football Fish",
-        "image": "/icons/fish/football-fish.png",
+        "image": "assets/images/icons/fish/football-fish.png",
         "price": 2500,
         "location": "Sea",
         "months": [1,2,3,11,12],
@@ -260,7 +260,7 @@
     },
     {
         "name": "Freshwater Goby",
-        "image": "/icons/fish/freshwater-goby.png",
+        "image": "assets/images/icons/fish/freshwater-goby.png",
         "price": 400,
         "location": "River",
         "months": [1,2,3,4,5,6,7,8,9,10,11,12],
@@ -273,14 +273,14 @@
     },
     {
         "name": "Frog",
-        "image": "/icons/fish/frog.png",
+        "image": "assets/images/icons/fish/frog.png",
         "price": 120,
         "location": "Pond",
         "months": [5,6,7,8]
     },
     {
         "name": "Gar",
-        "image": "/icons/fish/gar.png",
+        "image": "assets/images/icons/fish/gar.png",
         "price": 6000,
         "location": "Pond",
         "months": [6,7,8,9],
@@ -293,7 +293,7 @@
     },
     {
         "name": "Giant Snakehead",
-        "image": "/icons/fish/giant-snakehead.png",
+        "image": "assets/images/icons/fish/giant-snakehead.png",
         "price": 5500,
         "location": "Pond",
         "months": [6,7,8],
@@ -306,14 +306,14 @@
     },
     {
         "name": "Giant Trevally",
-        "image": "/icons/fish/giant-trevally.png",
+        "image": "assets/images/icons/fish/giant-trevally.png",
         "price": 4500,
         "location": "Pier",
         "months": [5,6,7,8,9,10]
     },
     {
         "name": "Golden Trout",
-        "image": "/icons/fish/golden-trout.png",
+        "image": "assets/images/icons/fish/golden-trout.png",
         "price": 15000,
         "location": "River (Clifftop)",
         "months": [3,4,5,9,10,11],
@@ -326,14 +326,14 @@
     },
     {
         "name": "Goldfish",
-        "image": "/icons/fish/goldfish.png",
+        "image": "assets/images/icons/fish/goldfish.png",
         "price": 1300,
         "location": "Pond",
         "months": [1,2,3,4,5,6,7,8,9,10,11,12]
     },
     {
         "name": "Great White Shark",
-        "image": "/icons/fish/great-white-shark.png",
+        "image": "assets/images/icons/fish/great-white-shark.png",
         "price": 15000,
         "location": "Sea",
         "months": [6,7,8,9],
@@ -346,7 +346,7 @@
     },
     {
         "name": "Guppy",
-        "image": "/icons/fish/guppy.png",
+        "image": "assets/images/icons/fish/guppy.png",
         "price": 1300,
         "location": "River",
         "months": [4,5,6,7,8,9,10,11],
@@ -359,7 +359,7 @@
     },
     {
         "name": "Hammerhead Shark",
-        "image": "/icons/fish/hammerhead-shark.png",
+        "image": "assets/images/icons/fish/hammerhead-shark.png",
         "price": 8000,
         "location": "Sea",
         "months": [6,7,8,9],
@@ -372,28 +372,28 @@
     },
     {
         "name": "Horse Mackerel",
-        "image": "/icons/fish/horse-mackerel.png",
+        "image": "assets/images/icons/fish/horse-mackerel.png",
         "price": 150,
         "location": "Sea",
         "months": [1,2,3,4,5,6,7,8,9,10,11,12]
     },
     {
         "name": "Killfish",
-        "image": "/icons/fish/killfish.png",
+        "image": "assets/images/icons/fish/killfish.png",
         "price": 300,
         "location": "Pond",
         "months": [4,5,6,7,8]
     },
     {
         "name": "King Salmon",
-        "image": "/icons/fish/king-salmon.png",
+        "image": "assets/images/icons/fish/king-salmon.png",
         "price": 1800,
         "location": "River (Mouth)",
         "months": [9]
     },
     {
         "name": "Koi",
-        "image": "/icons/fish/koi.png",
+        "image": "assets/images/icons/fish/koi.png",
         "price": 4000,
         "location": "Pond",
         "months": [1,2,3,4,5,6,7,8,9,10,11,12],
@@ -406,21 +406,21 @@
     },
     {
         "name": "Loach",
-        "image": "/icons/fish/loach.png",
+        "image": "assets/images/icons/fish/loach.png",
         "price": 400,
         "location": "River",
         "months": [3,4,5]
     },
     {
         "name": "Mahi-Mahi",
-        "image": "/icons/fish/mahi-mahi.png",
+        "image": "assets/images/icons/fish/mahi-mahi.png",
         "price": 6000,
         "location": "Pier",
         "months": [5,6,7,8,9,10]
     },
     {
         "name": "Mitten Crab",
-        "image": "/icons/fish/mitten-crab.png",
+        "image": "assets/images/icons/fish/mitten-crab.png",
         "price": 6000,
         "location": "Pier",
         "months": [9,10,11],
@@ -433,14 +433,14 @@
     },
     {
         "name": "Moray Eel",
-        "image": "/icons/fish/moray-eel.png",
+        "image": "assets/images/icons/fish/moray-eel.png",
         "price": 2000,
         "location": "Sea",
         "months": [8,9,10]
     },
     {
         "name": "Napoleonfish",
-        "image": "/icons/fish/napoleonfish.png",
+        "image": "assets/images/icons/fish/napoleonfish.png",
         "price": 10000,
         "location": "Sea",
         "months": [7,8],
@@ -453,7 +453,7 @@
     },
     {
         "name": "Neon Tetra",
-        "image": "/icons/fish/neon-tetra.png",
+        "image": "assets/images/icons/fish/neon-tetra.png",
         "price": 500,
         "location": "River",
         "months": [4,5,6,7,8,9,10,11],
@@ -466,7 +466,7 @@
     },
     {
         "name": "Nibble Fish",
-        "image": "/icons/fish/nibble-fish.png",
+        "image": "assets/images/icons/fish/nibble-fish.png",
         "price": 1500,
         "location": "River",
         "months": [5,6,7,8,9],
@@ -479,14 +479,14 @@
     },
     {
         "name": "Oarfish",
-        "image": "/icons/fish/oarfish.png",
+        "image": "assets/images/icons/fish/oarfish.png",
         "price": 9000,
         "location": "Sea",
         "months": [1,2,3,4,5,12]
     },
     {
         "name": "Ocean Sunfish",
-        "image": "/icons/fish/ocean-sunfish.png",
+        "image": "assets/images/icons/fish/ocean-sunfish.png",
         "price": 4000,
         "location": "Sea",
         "months": [7,8,9],
@@ -499,14 +499,14 @@
     },
     {
         "name": "Olive Flounder",
-        "image": "/icons/fish/olive-flounder.png",
+        "image": "assets/images/icons/fish/olive-flounder.png",
         "price": 800,
         "location": "Sea",
         "months": [1,2,3,4,5,6,7,8,9,10,11,12]
     },
     {
         "name": "Pale Chub",
-        "image": "/icons/fish/pale-chub.png",
+        "image": "assets/images/icons/fish/pale-chub.png",
         "price": 200,
         "location": "River",
         "months": [1,2,3,4,5,6,7,8,9,10,11,12],
@@ -519,14 +519,14 @@
     },
     {
         "name": "Pike",
-        "image": "/icons/fish/pike.png",
+        "image": "assets/images/icons/fish/pike.png",
         "price": 1800,
         "location": "River",
         "months": [9,10,11,12]
     },
     {
         "name": "Piranha",
-        "image": "/icons/fish/piranha.png",
+        "image": "assets/images/icons/fish/piranha.png",
         "price": 2500,
         "location": "River",
         "months": [6,7,8,9],
@@ -543,14 +543,14 @@
     },
     {
         "name": "Pond Smelt",
-        "image": "/icons/fish/pond-smelt.png",
+        "image": "assets/images/icons/fish/pond-smelt.png",
         "price": 500,
         "location": "River",
         "months": [1,2,12]
     },
     {
         "name": "Pop-Eyed Goldfish",
-        "image": "/icons/fish/pop-eyed-goldfish.png",
+        "image": "assets/images/icons/fish/pop-eyed-goldfish.png",
         "price": 1300,
         "location": "Pond",
         "months": [1,2,3,4,5,6,7,8,9,10,11,12],
@@ -563,14 +563,14 @@
     },
     {
         "name": "Puffer Fish",
-        "image": "/icons/fish/puffer-fish.png",
+        "image": "assets/images/icons/fish/puffer-fish.png",
         "price": 250,
         "location": "Sea",
         "months": [7,8,9]
     },
     {
         "name": "Rainbowfish",
-        "image": "/icons/fish/rainbowfish.png",
+        "image": "assets/images/icons/fish/rainbowfish.png",
         "price": 800,
         "location": "River",
         "months": [5,6,7,8,9,10],
@@ -583,7 +583,7 @@
     },
     {
         "name": "Ranchu Goldfish",
-        "image": "/icons/fish/ranchu-goldfish.png",
+        "image": "assets/images/icons/fish/ranchu-goldfish.png",
         "price": 4500,
         "location": "Pond",
         "months": [1,2,3,4,5,6,7,8,9,10,11,12],
@@ -596,7 +596,7 @@
     },
     {
         "name": "Ray",
-        "image": "/icons/fish/ray.png",
+        "image": "assets/images/icons/fish/ray.png",
         "price": 3000,
         "location": "Sea",
         "months": [8,9,10,11],
@@ -609,21 +609,21 @@
     },
     {
         "name": "Red Snapper",
-        "image": "/icons/fish/red-snapper.png",
+        "image": "assets/images/icons/fish/red-snapper.png",
         "price": 3000,
         "location": "Sea",
         "months": [1,2,3,4,5,6,7,8,9,10,11,12]
     },
     {
         "name": "Ribbon Eel",
-        "image": "/icons/fish/ribbon-eel.png",
+        "image": "assets/images/icons/fish/ribbon-eel.png",
         "price": 600,
         "location": "Sea",
         "months": [6,7,8,9,10]
     },
     {
         "name": "Saddled Bichir",
-        "image": "/icons/fish/saddled-bichir.png",
+        "image": "assets/images/icons/fish/saddled-bichir.png",
         "price": 4000,
         "location": "River",
         "months": [6,7,8,9],
@@ -636,14 +636,14 @@
     },
     {
         "name": "Salmon",
-        "image": "/icons/fish/salmon.png",
+        "image": "assets/images/icons/fish/salmon.png",
         "price": 700,
         "location": "River (Mouth)",
         "months": [9]
     },
     {
         "name": "Saw Shark",
-        "image": "/icons/fish/saw-shark.png",
+        "image": "assets/images/icons/fish/saw-shark.png",
         "price": 12000,
         "location": "Sea",
         "months": [6,7,8,9],
@@ -656,28 +656,28 @@
     },
     {
         "name": "Sea bass",
-        "image": "/icons/fish/sea-bass.png",
+        "image": "assets/images/icons/fish/sea-bass.png",
         "price": 400,
         "location": "Sea",
         "months": [1,2,3,4,5,6,7,8,9,10,11,12]
     },
     {
         "name": "Sea Butterfly",
-        "image": "/icons/fish/sea-butterfly.png",
+        "image": "assets/images/icons/fish/sea-butterfly.png",
         "price": 1000,
         "location": "Sea",
         "months": [1,2,3,12]
     },
     {
         "name": "Sea Horse",
-        "image": "/icons/fish/sea-horse.png",
+        "image": "assets/images/icons/fish/sea-horse.png",
         "price": 1100,
         "location": "Sea",
         "months": [4,5,6,7,8,9,10,11]
     },
     {
         "name": "Snapping Turtle",
-        "image": "/icons/fish/snapping-turtle.png",
+        "image": "assets/images/icons/fish/snapping-turtle.png",
         "price": 5000,
         "location": "River",
         "months": [4,5,6,7,8,9,10],
@@ -690,7 +690,7 @@
     },
     {
         "name": "Soft-Shelled Turtle",
-        "image": "/icons/fish/soft-shelled-turtle.png",
+        "image": "assets/images/icons/fish/soft-shelled-turtle.png",
         "price": 3750,
         "location": "River",
         "months": [8,9],
@@ -703,14 +703,14 @@
     },
     {
         "name": "Squid",
-        "image": "/icons/fish/squid.png",
+        "image": "assets/images/icons/fish/squid.png",
         "price": 500,
         "location": "Sea",
         "months": [1,2,3,4,5,6,7,8,12]
     },
     {
         "name": "Stringfish",
-        "image": "/icons/fish/stringfish.png",
+        "image": "assets/images/icons/fish/stringfish.png",
         "price": 15000,
         "location": "River (Clifftop)",
         "months": [1,2,3,12],
@@ -723,70 +723,70 @@
     },
     {
         "name": "Sturgeon",
-        "image": "/icons/fish/sturgeon.png",
+        "image": "assets/images/icons/fish/sturgeon.png",
         "price": 10000,
         "location": "River (Mouth)",
         "months": [1,2,3,9,10,11,12]
     },
     {
         "name": "Suckerfish",
-        "image": "/icons/fish/suckerfish.png",
+        "image": "assets/images/icons/fish/suckerfish.png",
         "price": 1500,
         "location": "Sea",
         "months": [6,7,8,9]
     },
     {
         "name": "Surgeonfish",
-        "image": "/icons/fish/surgeonfish.png",
+        "image": "assets/images/icons/fish/surgeonfish.png",
         "price": 1000,
         "location": "Sea",
         "months": [4,5,6,7,8,9]
     },
     {
         "name": "Sweetfish",
-        "image": "/icons/fish/sweetfish.png",
+        "image": "assets/images/icons/fish/sweetfish.png",
         "price": 1000,
         "location": "Sea",
         "months": [7,8,9]
     },
     {
         "name": "Tadpole",
-        "image": "/icons/fish/tadpole.png",
+        "image": "assets/images/icons/fish/tadpole.png",
         "price": 100,
         "location": "Pond",
         "months": [3,4,5,6,7]
     },
     {
         "name": "Tilapia",
-        "image": "/icons/fish/tilapia.png",
+        "image": "assets/images/icons/fish/tilapia.png",
         "price": 800,
         "location": "River",
         "months": [6,7,8,9,10]
     },
     {
         "name": "Tuna",
-        "image": "/icons/fish/tuna.png",
+        "image": "assets/images/icons/fish/tuna.png",
         "price": 7000,
         "location": "Pier",
         "months": [1,2,3,4,11,12]
     },
     {
         "name": "Whale Shark",
-        "image": "/icons/fish/whale-shark.png",
+        "image": "assets/images/icons/fish/whale-shark.png",
         "price": 13000,
         "location": "Sea",
         "months": [6,7,8,9]
     },
     {
         "name": "Yellow Perch",
-        "image": "/icons/fish/yellow-perch.png",
+        "image": "assets/images/icons/fish/yellow-perch.png",
         "price": 300,
         "location": "River",
         "months": [1,2,3,10,11,12]
     },
     {
         "name": "Zebra Turkeyfish",
-        "image": "/icons/fish/zebra-turkeyfish.png",
+        "image": "assets/images/icons/fish/zebra-turkeyfish.png",
         "price": 500,
         "location": "Sea",
         "months": [4,5,6,7,8,9,10,11]
