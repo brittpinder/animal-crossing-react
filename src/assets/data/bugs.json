@@ -1,0 +1,912 @@
+[
+{
+    "name": "Agrias Butterfly",
+    "image": "/icons/bugs/agrias-butterfly.png",
+    "price": 3000,
+    "location": "Flying",
+    "months": [4,5,6,7,8,9],
+    "time": [
+        {
+            "start": 8,
+            "end": 17
+        }
+    ]
+},
+{
+    "name": "Ant",
+    "image": "/icons/bugs/ant.png",
+    "price": 80,
+    "location": "Rotten Fruit",
+    "months": [1,2,3,4,5,6,7,8,9,10,11,12]
+},
+{
+    "name": "Atlas Moth",
+    "image": "/icons/bugs/atlas-moth.png",
+    "price": 3000,
+    "location": "Trees",
+    "months": [4,5,6,7,8,9],
+    "time": [
+        {
+            "start": 19,
+            "end": 4
+        }
+    ]
+},
+{
+    "name": "Bagworm",
+    "image": "/icons/bugs/bagworm.png",
+    "price": 600,
+    "location": "Shaking Trees",
+    "months": [1,2,3,4,5,6,7,8,9,10,11,12]
+},
+{
+    "name": "Banded Dragonfly",
+    "image": "/icons/bugs/banded-dragonfly.png",
+    "price": 4500,
+    "location": "Flying",
+    "months": [5,6,7,8,9,10],
+    "time": [
+        {
+            "start": 8,
+            "end": 17
+        }
+    ]
+},
+{
+    "name": "Bell Cricket",
+    "image": "/icons/bugs/bell-cricket.png",
+    "price": 430,
+    "location": "Ground",
+    "months": [9,10],
+    "time": [
+        {
+            "start": 17,
+            "end": 8
+        }
+    ]
+},
+{
+    "name": "Blue Weevil Beetle",
+    "image": "/icons/bugs/blue-weevil-beetle.png",
+    "price": 800,
+    "location": "Trees",
+    "months": [7,8]
+},
+{
+    "name": "Brown Cicada",
+    "image": "/icons/bugs/brown-cicada.png",
+    "price": 250,
+    "location": "Trees",
+    "months": [7,8],
+    "time": [
+        {
+            "start": 8,
+            "end": 17
+        }
+    ]
+},
+{
+    "name": "Centipede",
+    "image": "/icons/bugs/centipede.png",
+    "price": 300,
+    "location": "Hitting Rocks",
+    "months": [1,2,3,4,5,6,9,10,11,12],
+    "time": [
+        {
+            "start": 16,
+            "end": 23
+        }
+    ]
+},
+{
+    "name": "Cicada Shell",
+    "image": "/icons/bugs/cicada-shell.png",
+    "price": 10,
+    "location": "Trees",
+    "months": [7,8]
+},
+{
+    "name": "Citrus Long-Horned Beetle",
+    "image": "/icons/bugs/citrus-long-horned-beetle.png",
+    "price": 350,
+    "location": "Tree Stumps",
+    "months": [1,2,3,4,5,6,7,8,9,10,11,12]
+},
+{
+    "name": "Common Bluebottle",
+    "image": "/icons/bugs/common-bluebottle.png",
+    "price": 300,
+    "location": "Flying",
+    "months": [4,5,6,7,8],
+    "time": [
+        {
+            "start": 4,
+            "end": 19
+        }
+    ]
+},
+{
+    "name": "Common Butterfly",
+    "image": "/icons/bugs/common-butterfly.png",
+    "price": 160,
+    "location": "Flying",
+    "months": [1,2,3,4,5,6,9,10,11,12],
+    "time": [
+        {
+            "start": 4,
+            "end": 19
+        }
+    ]
+},
+{
+    "name": "Cricket",
+    "image": "/icons/bugs/cricket.png",
+    "price": 130,
+    "location": "Ground",
+    "months": [9,10,11],
+    "time": [
+        {
+            "start": 17,
+            "end": 8
+        }
+    ]
+},
+{
+    "name": "Cyclommatus Stag",
+    "image": "/icons/bugs/cyclommatus-stag.png",
+    "price": 8000,
+    "location": "Trees",
+    "months": [7,8],
+    "time": [
+        {
+            "start": 17,
+            "end": 8
+        }
+    ]
+},
+{
+    "name": "Damselfly",
+    "image": "/icons/bugs/damselfly.png",
+    "price": 500,
+    "location": "Flying",
+    "months": [1,2,11,12]
+},
+{
+    "name": "Darner Dragonfly",
+    "image": "/icons/bugs/darner-dragonfly.png",
+    "price": 230,
+    "location": "Flying",
+    "months": [4,5,6,7,8,9,10],
+    "time": [
+        {
+            "start": 8,
+            "end": 17
+        }
+    ]
+},
+{
+    "name": "Diving Beetle",
+    "image": "/icons/bugs/diving-beetle.png",
+    "price": 800,
+    "location": "Ponds and Rivers",
+    "months": [5,6,7,8,9],
+    "time": [
+        {
+            "start": 8,
+            "end": 19
+        }
+    ]
+},
+{
+    "name": "Drone Beetle",
+    "image": "/icons/bugs/drone-beetle.png",
+    "price": 200,
+    "location": "Trees",
+    "months": [6,7,8]
+},
+{
+    "name": "Dung Beetle",
+    "image": "/icons/bugs/dung-beetle.png",
+    "price": 3000,
+    "location": "Ground (rolling snowballs)",
+    "months": [1,2,12]
+},
+{
+    "name": "Earth-Boring Dung Beetle",
+    "image": "/icons/bugs/earth-boring-dung-beetle.png",
+    "price": 300,
+    "location": "Ground",
+    "months": [7,8,9]
+},
+{
+    "name": "Emperor Butterfly",
+    "image": "/icons/bugs/emperor-butterfly.png",
+    "price": 4000,
+    "location": "Flying",
+    "months": [1,2,3,6,7,8,9,12],
+    "time": [
+        {
+            "start": 17,
+            "end": 8
+        }
+    ]
+},
+{
+    "name": "Evening Cicada",
+    "image": "/icons/bugs/evening-cicada.png",
+    "price": 550,
+    "location": "Trees",
+    "months": [7,8],
+    "time": [
+        {
+            "start": 4,
+            "end": 8
+        },
+        {
+            "start": 16,
+            "end": 19
+        }
+    ]
+},
+{
+    "name": "Firefly",
+    "image": "/icons/bugs/firefly.png",
+    "price": 300,
+    "location": "Flying",
+    "months": [6],
+    "time": [
+        {
+            "start": 19,
+            "end": 4
+        }
+    ]
+},
+{
+    "name": "Flea",
+    "image": "/icons/bugs/bagworm.png",
+    "price": 70,
+    "location": "Villager's Heads",
+    "months": [4,5,6,7,8,9,10,11]
+},
+{
+    "name": "Fly",
+    "image": "/icons/bugs/fly.png",
+    "price": 60,
+    "location": "Trash",
+    "months": [1,2,3,4,5,6,7,8,9,10,11,12]
+},
+{
+    "name": "Giant Cicada",
+    "image": "/icons/bugs/giant-cicada.png",
+    "price": 500,
+    "location": "Trees",
+    "months": [7,8],
+    "time": [
+        {
+            "start": 8,
+            "end": 17
+        }
+    ]
+},
+{
+    "name": "Giant Stag",
+    "image": "/icons/bugs/giant-stag.png",
+    "price": 10000,
+    "location": "Trees",
+    "months": [7,8],
+    "time": [
+        {
+            "start": 23,
+            "end": 8
+        }
+    ]
+},
+{
+    "name": "Giant Water Bug",
+    "image": "/icons/bugs/giant-water-bug.png",
+    "price": 2000,
+    "location": "Ponds and Rivers",
+    "months": [4,5,6,7,8,9],
+    "time": [
+        {
+            "start": 19,
+            "end": 8
+        }
+    ]
+},
+{
+    "name": "Giraffe Stag",
+    "image": "/icons/bugs/giraffe-stag.png",
+    "price": 12000,
+    "location": "Shaking Trees",
+    "months": [7,8],
+    "time": [
+        {
+            "start": 17,
+            "end": 8
+        }
+    ]
+},
+{
+    "name": "Golden Stag",
+    "image": "/icons/bugs/golden-stag.png",
+    "price": 12000,
+    "location": "Trees",
+    "months": [7,8],
+    "time": [
+        {
+            "start": 17,
+            "end": 8
+        }
+    ]
+},
+{
+    "name": "Goliath Beetle",
+    "image": "/icons/bugs/goliath-beetle.png",
+    "price": 8000,
+    "location": "Trees",
+    "months": [6,7,8,9],
+    "time": [
+        {
+            "start": 17,
+            "end": 8
+        }
+    ]
+},
+{
+    "name": "Grasshopper",
+    "image": "/icons/bugs/grasshopper.png",
+    "price": 160,
+    "location": "Ground",
+    "months": [7,8,9],
+    "time": [
+        {
+            "start": 8,
+            "end": 17
+        }
+    ]
+},
+{
+    "name": "Great Purple Emperor",
+    "image": "/icons/bugs/great-purple-emperor.png",
+    "price": 3000,
+    "location": "Flying",
+    "months": [5,6,7,8],
+    "time": [
+        {
+            "start": 4,
+            "end": 19
+        }
+    ]
+},
+{
+    "name": "Hermit Crab",
+    "image": "/icons/bugs/hermit-crab.png",
+    "price": 1000,
+    "location": "Beach",
+    "months": [1,2,3,4,5,6,7,8,9,10,11,12],
+    "time": [
+        {
+            "start": 19,
+            "end": 8
+        }
+    ]
+},
+{
+    "name": "Honeybee",
+    "image": "/icons/bugs/honeybee.png",
+    "price": 200,
+    "location": "Flying",
+    "months": [3,4,5,6,7],
+    "time": [
+        {
+            "start": 8,
+            "end": 17
+        }
+    ]
+},
+{
+    "name": "Horned Atlas",
+    "image": "/icons/bugs/horned-atlas.png",
+    "price": 8000,
+    "location": "Trees",
+    "months": [7,8],
+    "time": [
+        {
+            "start": 17,
+            "end": 8
+        }
+    ]
+},
+{
+    "name": "Horned Dynastid",
+    "image": "/icons/bugs/horned-dynastid.png",
+    "price": 1350,
+    "location": "Trees",
+    "months": [7,8],
+    "time": [
+        {
+            "start": 17,
+            "end": 8
+        }
+    ]
+},
+{
+    "name": "Horned Elephant",
+    "image": "/icons/bugs/horned-elephant.png",
+    "price": 8000,
+    "location": "Trees",
+    "months": [7,8],
+    "time": [
+        {
+            "start": 17,
+            "end": 8
+        }
+    ]
+},
+{
+    "name": "Horned Hercules",
+    "image": "/icons/bugs/horned-hercules.png",
+    "price": 12000,
+    "location": "Trees",
+    "months": [7,8],
+    "time": [
+        {
+            "start": 17,
+            "end": 8
+        }
+    ]
+},
+{
+    "name": "Jewel Beetle",
+    "image": "/icons/bugs/jewel-beetle.png",
+    "price": 2400,
+    "location": "Tree Stumps",
+    "months": [4,5,6,7,8]
+},
+{
+    "name": "Lady Bug",
+    "image": "/icons/bugs/lady-bug.png",
+    "price": 200,
+    "location": "Flowers",
+    "months": [3,4,5,6,10],
+    "time": [
+        {
+            "start": 8,
+            "end": 17
+        }
+    ]
+},
+{
+    "name": "Long Locust",
+    "image": "/icons/bugs/long-locust.png",
+    "price": 200,
+    "location": "Ground",
+    "months": [4,5,6,7,8,9,10,11],
+    "time": [
+        {
+            "start": 8,
+            "end": 19
+        }
+    ]
+},
+{
+    "name": "Madagascan Sunset Moth",
+    "image": "/icons/bugs/madagascan-sunset-moth.png",
+    "price": 2500,
+    "location": "Flying",
+    "months": [4,5,6,7,8,9],
+    "time": [
+        {
+            "start": 8,
+            "end": 16
+        }
+    ]
+},
+{
+    "name": "Man-Faced Stink Bug",
+    "image": "/icons/bugs/man-faced-stink-bug.png",
+    "price": 1000,
+    "location": "Flowers",
+    "months": [3,4,5,6,7,8,9,10],
+    "time": [
+        {
+            "start": 19,
+            "end": 8
+        }
+    ]
+},
+{
+    "name": "Mantis",
+    "image": "/icons/bugs/mantis.png",
+    "price": 430,
+    "location": "Flowers",
+    "months": [3,4,5,6,7,8,9,10,11],
+    "time": [
+        {
+            "start": 8,
+            "end": 17
+        }
+    ]
+},
+{
+    "name": "Migratory Locust",
+    "image": "/icons/bugs/migratory-locust.png",
+    "price": 600,
+    "location": "Ground",
+    "months": [8,9,10,11],
+    "time": [
+        {
+            "start": 8,
+            "end": 19
+        }
+    ]
+},
+{
+    "name": "Miyama Stag",
+    "image": "/icons/bugs/miyama-stag.png",
+    "price": 1000,
+    "location": "Trees",
+    "months": [7,8]
+},
+{
+    "name": "Mole Cricket",
+    "image": "/icons/bugs/mole-cricket.png",
+    "price": 500,
+    "location": "Underground",
+    "months": [1,2,3,4,5,11,12]
+},
+{
+    "name": "Monarch Butterfly",
+    "image": "/icons/bugs/monarch-butterfly.png",
+    "price": 140,
+    "location": "Flying",
+    "months": [9,10,11],
+    "time": [
+        {
+            "start": 4,
+            "end": 17
+        }
+    ]
+},
+{
+    "name": "Mosquito",
+    "image": "/icons/bugs/mosquito.png",
+    "price": 130,
+    "location": "Flying",
+    "months": [6,7,8,9],
+    "time": [
+        {
+            "start": 17,
+            "end": 4
+        }
+    ]
+},
+{
+    "name": "Moth",
+    "image": "/icons/bugs/moth.png",
+    "price": 130,
+    "location": "Flying by Light",
+    "months": [1,2,3,4,5,6,7,8,9,10,11,12],
+    "time": [
+        {
+            "start": 19,
+            "end": 4
+        }
+    ]
+},
+{
+    "name": "Orchid Mantis",
+    "image": "/icons/bugs/orchid-mantis.png",
+    "price": 2400,
+    "location": "Flowers (white)",
+    "months": [3,4,5,6,7,8,9,10,11],
+    "time": [
+        {
+            "start": 8,
+            "end": 17
+        }
+    ]
+},
+{
+    "name": "Paper Kite Butterfly",
+    "image": "/icons/bugs/paper-kite-butterfly.png",
+    "price": 1000,
+    "location": "Flying",
+    "months": [1,2,3,4,5,6,7,8,9,10,11,12],
+    "time": [
+        {
+            "start": 8,
+            "end": 19
+        }
+    ]
+},
+{
+    "name": "Peacock Butterfly",
+    "image": "/icons/bugs/peacock-butterfly.png",
+    "price": 2500,
+    "location": "Flying by Hybrid Flowers",
+    "months": [3,4,5,6],
+    "time": [
+        {
+            "start": 4,
+            "end": 19
+        }
+    ]
+},
+{
+    "name": "Pill Bug",
+    "image": "/icons/bugs/pill-bug.png",
+    "price": 250,
+    "location": "Hitting Rocks",
+    "months": [1,2,3,4,5,6,9,10,11,12],
+    "time": [
+        {
+            "start": 23,
+            "end": 16
+        }
+    ]
+},
+{
+    "name": "Pondskater",
+    "image": "/icons/bugs/pondskater.png",
+    "price": 130,
+    "location": "Ponds and Rivers",
+    "months": [5,6,7,8,9],
+    "time": [
+        {
+            "start": 8,
+            "end": 19
+        }
+    ]
+},
+{
+    "name": "Queen Alexandra's Birdwing",
+    "image": "/icons/bugs/queen-alexandras-birdwing.png",
+    "price": 4000,
+    "location": "Flying",
+    "months": [5,6,7,8,9],
+    "time": [
+        {
+            "start": 8,
+            "end": 16
+        }
+    ]
+},
+{
+    "name": "Rainbow Stag",
+    "image": "/icons/bugs/rainbow-stag.png",
+    "price": 6000,
+    "location": "Trees",
+    "months": [6,7,8,9],
+    "time": [
+        {
+            "start": 19,
+            "end": 8
+        }
+    ]
+},
+{
+    "name": "Rajah Brooke's Birdwing",
+    "image": "/icons/bugs/rajah-brookes-birdwing.png",
+    "price": 2500,
+    "location": "Flying",
+    "months": [1,2,4,5,6,7,8,9,12],
+    "time": [
+        {
+            "start": 8,
+            "end": 17
+        }
+    ]
+},
+{
+    "name": "Red Dragonfly",
+    "image": "/icons/bugs/red-dragonfly.png",
+    "price": 180,
+    "location": "Flying",
+    "months": [9,10],
+    "time": [
+        {
+            "start": 8,
+            "end": 19
+        }
+    ]
+},
+{
+    "name": "Rice Grashopper",
+    "image": "/icons/bugs/rice-grasshopper.png",
+    "price": 160,
+    "location": "Ground",
+    "months": [8,9,10,11],
+    "time": [
+        {
+            "start": 8,
+            "end": 19
+        }
+    ]
+},
+{
+    "name": "Robust Cicada",
+    "image": "/icons/bugs/robust-cicada.png",
+    "price": 300,
+    "location": "Trees",
+    "months": [7,8],
+    "time": [
+        {
+            "start": 8,
+            "end": 17
+        }
+    ]
+},
+{
+    "name": "Rosalia Batesi Beetle",
+    "image": "/icons/bugs/rosalia-batesi-beetle.png",
+    "price": 3000,
+    "location": "Tree Stumps",
+    "months": [5,6,7,8,9]
+},
+{
+    "name": "Saw Stag",
+    "image": "/icons/bugs/saw-stag.png",
+    "price": 2000,
+    "location": "Trees",
+    "months": [7,8]
+},
+{
+    "name": "Scarab Beetle",
+    "image": "/icons/bugs/scarab-beetle.png",
+    "price": 10000,
+    "location": "Trees",
+    "months": [7,8],
+    "time": [
+        {
+            "start": 23,
+            "end": 8
+        }
+    ]
+},
+{
+    "name": "Scorpion",
+    "image": "/icons/bugs/scorpion.png",
+    "price": 8000,
+    "location": "Ground",
+    "months": [5,6,7,8,9,10],
+    "time": [
+        {
+            "start": 19,
+            "end": 4
+        }
+    ]
+},
+{
+    "name": "Snail",
+    "image": "/icons/bugs/snail.png",
+    "price": 250,
+    "location": "Rocks (rain)",
+    "months": [1,2,3,4,5,6,7,8,9,10,11,12]
+},
+{
+    "name": "Spider",
+    "image": "/icons/bugs/spider.png",
+    "price": 480,
+    "location": "Shaking Trees",
+    "months": [1,2,3,4,5,6,7,8,9,10,11,12],
+    "time": [
+        {
+            "start": 19,
+            "end": 8
+        }
+    ]
+},
+{
+    "name": "Stinkbug",
+    "image": "/icons/bugs/stinkbug.png",
+    "price": 120,
+    "location": "Flowers",
+    "months": [3,4,5,6,7,8,9,10]
+},
+{
+    "name": "Tarantula",
+    "image": "/icons/bugs/tarantula.png",
+    "price": 8000,
+    "location": "Ground",
+    "months": [1,2,3,4,11,12],
+    "time": [
+        {
+            "start": 19,
+            "end": 4
+        }
+    ]
+},
+{
+    "name": "Tiger Beetle",
+    "image": "/icons/bugs/tiger-beetle.png",
+    "price": 1500,
+    "location": "Ground",
+    "months": [2,3,4,5,6,7,8,9,10]
+},
+{
+    "name": "Tiger Butterfly",
+    "image": "/icons/bugs/tiger-butterfly.png",
+    "price": 240,
+    "location": "Flying",
+    "months": [3,4,5,6,7,8,9],
+    "time": [
+        {
+            "start": 4,
+            "end": 19
+        }
+    ]
+},
+{
+    "name": "Violin Beetle",
+    "image": "/icons/bugs/violin-beetle.png",
+    "price": 450,
+    "location": "Tree Stumps",
+    "months": [5,6,9,10,11]
+},
+{
+    "name": "Walker Cicada",
+    "image": "/icons/bugs/walker-cicada.png",
+    "price": 400,
+    "location": "Trees",
+    "months": [8,9],
+    "time": [
+        {
+            "start": 8,
+            "end": 17
+        }
+    ]
+},
+{
+    "name": "Walking Leaf",
+    "image": "/icons/bugs/walking-leaf.png",
+    "price": 600,
+    "location": "Under Trees Disguised as Leafs",
+    "months": [7,8,9]
+},
+{
+    "name": "Walking Stick",
+    "image": "/icons/bugs/walking-stick.png",
+    "price": 600,
+    "location": "Trees",
+    "months": [7,8,9,10,11],
+    "time": [
+        {
+            "start": 4,
+            "end": 8
+        },
+        {
+            "start": 17,
+            "end": 19
+        }
+    ]
+},
+{
+    "name": "Wasp",
+    "image": "/icons/bugs/wasp.png",
+    "price": 2500,
+    "location": "Shaking Trees",
+    "months": [1,2,3,4,5,6,7,8,9,10,11,12]
+},
+{
+    "name": "Wharf Roach",
+    "image": "/icons/bugs/wharf-roach.png",
+    "price": 200,
+    "location": "Beach Rocks",
+    "months": [1,2,3,4,5,6,7,8,9,10,11,12]
+},
+{
+    "name": "Yellow Butterfly",
+    "image": "/icons/bugs/yellow-butterfly.png",
+    "price": 160,
+    "location": "Flying",
+    "months": [3,4,5,6,9,10],
+    "time": [
+        {
+            "start": 4,
+            "end": 19
+        }
+    ]
+}
+]
