@@ -7,6 +7,7 @@ const critterTable = (props) => (
                 <th>Name</th>
                 <th>Image</th>
                 <th>Price</th>
+                <th>Location</th>
             </tr>
         </thead>
         <tbody>
@@ -15,6 +16,7 @@ const critterTable = (props) => (
                     <td>{critter.name}</td>
                     <td><img src={require("../../../" + critter.image)} /></td>
                     <td>{critter.price}</td>
+                    <td>{critter.location}</td>
                 </tr>
             ))}
         </tbody>
