@@ -1,7 +1,8 @@
 import React from 'react';
+import Table from 'react-bootstrap/Table'
 
 const critterTable = (props) => (
-    <table>
+    <Table>
         <thead>
             <tr>
                 <th>Name</th>
@@ -20,7 +21,7 @@ const critterTable = (props) => (
                 </tr>
             ))}
         </tbody>
-    </table>
+    </Table>
 );
 
 export default critterTable;
