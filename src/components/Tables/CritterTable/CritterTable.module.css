@@ -1,0 +1,7 @@
+.Table {
+    text-align: center;
+}
+
+.Table > tbody > tr > td {
+    vertical-align: middle;
+}

@@ -1,6 +1,8 @@
 import React from 'react';
 import Table from 'react-bootstrap/Table';
 
+import styles from './CritterTable.module.css';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCheck } from '@fortawesome/free-solid-svg-icons'
 
@@ -13,7 +15,7 @@ const critterTable = (props) => {
     }
 
     return (
-        <Table>
+        <Table bordered striped responsive size="sm" className={styles.Table}>
             <thead>
                 <tr>
                     <th>Name</th>
