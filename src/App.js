@@ -10,14 +10,14 @@ import Bugs from './containers/Bugs/Bugs';
 function App() {
   return (
     <div>
-      <Container>
         <TopBar />
-        <Switch>
-          <Route path='/fish' component={Fish} />
-          <Route path='/bugs' component={Bugs} />
-          <Route path='/' exact component={Home} />
-        </Switch>
-      </Container>
+        <Container>
+          <Switch>
+            <Route path='/fish' component={Fish} />
+            <Route path='/bugs' component={Bugs} />
+            <Route path='/' exact component={Home} />
+          </Switch>
+        </Container>
     </div>
   );
 }
