@@ -5,7 +5,6 @@ import CritterTable from '../../components/Tables/CritterTable/CritterTable';
 
 const Fish = (props) => (
     <React.Fragment>
-        <h1>Fish</h1>
         <CritterTable critterData={CritterUtil.fishData}/>
     </React.Fragment>
 );
