@@ -1,0 +1,13 @@
+.CritterCard {
+    float: left;
+    width: 30%;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.CritterCard > img{
+    max-width: 100px;
+    margin: auto;
+    margin-top: 20px;
+}
