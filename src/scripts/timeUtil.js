@@ -63,4 +63,19 @@ TimeUtil.months = [
     },
 ];
 
+TimeUtil.getCurrentMonthId = function() {
+    const date = new Date();
+    return date.getMonth() + 1;
+}
+
+TimeUtil.getCurrentMonthName = function() {
+    const date = new Date();
+    return TimeUtil.months[date.getMonth()].name;
+}
+
+TimeUtil.getLastMonthId = function() {
+    const currentMonthId = this.getCurrentMonthId();
+    return currentMonthId === 1 ? 12 : currentMonthId - 1;
+}
+
 export default TimeUtil;
