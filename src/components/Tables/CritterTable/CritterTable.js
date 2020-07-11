@@ -22,6 +22,7 @@ const critterTable = (props) => {
                     <th>Image</th>
                     <th>Price</th>
                     <th>Location</th>
+                    <th>Time</th>
                     {monthHeaders}
                 </tr>
             </thead>
@@ -32,6 +33,7 @@ const critterTable = (props) => {
                         <td><img src={require("../../../" + critter.image)} /></td>
                         <td>{critter.price}</td>
                         <td>{critter.location}</td>
+                        <td>{critter.timeText}</td>
                         {TimeUtil.months.map((month) => (
                             <td>{critter.months.includes(month.id) ? <FontAwesomeIcon icon={faCheck} /> : null}</td>
                         ))}

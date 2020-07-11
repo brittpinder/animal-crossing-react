@@ -78,4 +78,31 @@ TimeUtil.getLastMonthId = function() {
     return currentMonthId === 1 ? 12 : currentMonthId - 1;
 }
 
+const getHourAsText = function(hour) {
+    if (!Number.isInteger(hour)) {
+        return "";
+    } else if (hour >= 0 && hour < 12) {
+        return hour + " am";
+    } else if (hour === 12) {
+        return hour + " pm";
+    } else if (hour < 24) {
+        return (hour - 12) + " pm";
+    } else if (hour === 24) {
+        return (hour - 12) + " am";
+    } else {
+        return "";
+    }
+}
+
+TimeUtil.getTimePeriodsAsText = function(timePeriods) {
+    let textString = "";
+    for (let i = 0; i < timePeriods.length; i++) {
+        textString += (getHourAsText(timePeriods[i].start) + " - " + getHourAsText(timePeriods[i].end));
+        if (i !== timePeriods.length - 1) {
+            textString += " & ";
+        }
+    }
+    return textString;
+}
+
 export default TimeUtil;

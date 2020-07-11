@@ -7,6 +7,13 @@ let CritterUtil = {};
 CritterUtil.fishData = fishData;
 CritterUtil.bugData = bugData;
 
+CritterUtil.fishData.forEach(function(fish) {
+    fish.timeText = fish.time ? TimeUtil.getTimePeriodsAsText(fish.time) : "All Day";
+});
+CritterUtil.bugData.forEach(function(bug) {
+    bug.timeText = bug.time ? TimeUtil.getTimePeriodsAsText(bug.time) : "All Day";
+});
+
 const getCritterNewThisMonth = function(critterData) {
     let newCritters = [];
     const currentMonthId = TimeUtil.getCurrentMonthId();
