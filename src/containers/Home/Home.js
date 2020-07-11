@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 
+import _ from 'lodash/array';
+
 import TimeUtil from '../../scripts/timeUtil';
 import CritterUtil from '../../scripts/critterUtil';
 import CritterCard from '../../components/Cards/CritterCard/CritterCard';
 
-import { Container, Jumbotron } from 'react-bootstrap';
+import { Container, Jumbotron, Row, Col } from 'react-bootstrap';
 
 class Home extends Component {
     render() {
@@ -14,8 +16,14 @@ class Home extends Component {
                     <h1>New in {TimeUtil.getCurrentMonthName()}!</h1>
                     <p>These critters are now available</p>
                 </Jumbotron>
-                {CritterUtil.getCrittersNewThisMonth().map(critter => (
-                    <CritterCard critter={critter} />
+                {_.chunk(CritterUtil.getCrittersNewThisMonth(), 3).map(critterGroup => (
+                    <Row>
+                        {critterGroup.map(critter => (
+                            <Col md>
+                                <CritterCard critter={critter} />
+                            </Col>
+                        ))}
+                    </Row>
                 ))}
             </Container>
         );
