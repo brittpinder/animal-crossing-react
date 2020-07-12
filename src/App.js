@@ -1,10 +1,12 @@
 import React from 'react';
 
+import 'bootstrap/dist/css/bootstrap.min.css';
 import styles from './App.module.css';
 
 import { Route, Switch } from 'react-router-dom';
 import Container from 'react-bootstrap/Container'
 import TopBar from './components/Navigation/TopBar/TopBar';
+import Footer from './components/Footer/Footer';
 import Home from './containers/Home/Home';
 import Fish from './containers/Fish/Fish';
 import Bugs from './containers/Bugs/Bugs';
@@ -20,6 +22,7 @@ function App() {
             <Route path='/' exact component={Home} />
           </Switch>
         </Container>
+        <Footer/>
     </div>
   );
 }

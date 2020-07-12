@@ -7,7 +7,7 @@ import BellPrice from '../../BellPrice/BellPrice';
 import { Card, Row, Col } from 'react-bootstrap';
 
 const critterCard = (props) => (
-    <Card bg="light" className={styles.CritterCard}>
+    <Card className={styles.CritterCard}>
         <Card.Img variant="top" src={require("../../../" + props.critter.image)} />
         <Card.Body>
             <Card.Title>{props.critter.name}</Card.Title>

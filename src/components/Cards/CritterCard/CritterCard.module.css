@@ -1,6 +1,9 @@
 .CritterCard {
+    background-color: #fff9eb;
     margin-bottom: 20px;
     text-align: center;
+    border-radius: 1.5rem;
+    box-shadow: 0px 5px 10px #1a6b56;
 }
 
 .CritterCard > img{
@@ -10,5 +13,9 @@
 }
 
 .Footer {
-    font-size: 0.9em;
+    font-size: 0.9rem;
+}
+
+.Footer:last-child {
+    border-radius: 1.5rem;
 }
