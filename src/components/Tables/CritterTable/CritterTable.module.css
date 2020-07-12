@@ -1,8 +1,49 @@
 .Table {
     text-align: center;
-    background-color: white;
+    background-color: #fff9eb;
+    border: none;
+    border-radius: 1.5rem;
+    box-shadow: 0px 5px 10px #1a6b56;
+    overflow: hidden;
 }
 
 .Table > tbody > tr > td {
     vertical-align: middle;
+    border: 0;
+}
+
+.Table > thead > tr > th {
+    border: 0;
+}
+
+.Winter {
+    background-color: #6dcff6;
+}
+
+.WinterDark {
+    background-color: #00bff3;
+}
+
+.Spring {
+    background-color: #f49ac1;
+}
+
+.SpringDark {
+    background-color: #f06eaa;
+}
+
+.Summer {
+    background-color: #82ca9c;
+}
+
+.SummerDark {
+    background-color: #3cb878;
+}
+
+.Fall {
+    background-color: #f9ad81;
+}
+
+.FallDark {
+    background-color: #f68e56;
 }

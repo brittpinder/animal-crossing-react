@@ -4,62 +4,74 @@ TimeUtil.months = [
     {
         id: 1,
         name: "January",
-        shortName: "Jan"
+        shortName: "Jan",
+        season: "Winter"
     },
     {
         id: 2,
         name: "February",
-        shortName: "Feb"
+        shortName: "Feb",
+        season: "Winter"
     },
     {
         id: 3,
         name: "March",
-        shortName: "Mar"
+        shortName: "Mar",
+        season: "Spring"
     },
     {
         id: 4,
         name: "April",
-        shortName: "Apr"
+        shortName: "Apr",
+        season: "Spring"
     },
     {
         id: 5,
         name: "May",
-        shortName: "May"
+        shortName: "May",
+        season: "Spring"
     },
     {
         id: 6,
         name: "June",
-        shortName: "Jun"
+        shortName: "Jun",
+        season: "Summer"
     },
     {
         id: 7,
         name: "July",
-        shortName: "Jul"
+        shortName: "Jul",
+        season: "Summer"
     },
     {
         id: 8,
         name: "August",
-        shortName: "Aug"
+        shortName: "Aug",
+        season: "Summer"
     },
     {
         id: 9,
         name: "September",
-        shortName: "Sep"
+        shortName: "Sep",
+        season: "Fall"
     },
     {
         id: 10,
         name: "October",
-        shortName: "Oct"
+        shortName: "Oct",
+        season: "Fall"
     },
     {
         id: 11,
         name: "November",
-        shortName: "Nov"
+        shortName: "Nov",
+        season: "Fall"
     },
     {
         id: 12,
         name: "December",
-        shortName: "Dec"
+        shortName: "Dec",
+        season: "Winter"
     },
 ];
 
