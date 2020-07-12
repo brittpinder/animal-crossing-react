@@ -20,26 +20,26 @@ class CritterTable extends Component {
         ascending: true
     }
 
-    sortBy = (sortingType, ascendingFn, descendingFn) => {
+    sortBy = (sortingType) => {
         let sortedCritters = [...this.state.critters];
         let ascending = true;
         if (this.state.sortedBy === sortingType && this.state.ascending) {
             ascending = false;
         }
-        sortedCritters.sort(ascending ? ascendingFn : descendingFn);
+        if (ascending) {
+            sortedCritters.sort((a, b) => (a[sortingType] > b[sortingType]) ? 1 : -1);
+        } else {
+            sortedCritters.sort((a, b) => (a[sortingType] < b[sortingType]) ? 1 : -1);
+        }
         this.setState({critters: sortedCritters, sortedBy: sortingType, ascending: ascending});
     }
 
     onNameClicked = () => {
-        this.sortBy(sortType.NAME,
-            (a, b) => (a.name > b.name) ? 1 : -1,
-            (a, b) => (a.name < b.name) ? 1 : -1);
+        this.sortBy(sortType.NAME);
     }
 
     onPriceClicked = () => {
-        this.sortBy(sortType.PRICE,
-            (a, b) => (a.price > b.price) ? 1 : -1,
-            (a, b) => (a.price < b.price) ? 1 : -1);
+        this.sortBy(sortType.PRICE);
     }
 
     getSeasonClass = (season, dark) => {
