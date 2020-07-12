@@ -16,10 +16,10 @@ class Home extends Component {
                     <h1>New in {TimeUtil.getCurrentMonthName()}!</h1>
                     <p>These critters are now available</p>
                 </Jumbotron>
-                {_.chunk(CritterUtil.getCrittersNewThisMonth(), 3).map(critterGroup => (
-                    <Row>
+                {_.chunk(CritterUtil.getCrittersNewThisMonth(), 3).map((critterGroup, groupIndex) => (
+                    <Row key={groupIndex}>
                         {critterGroup.map(critter => (
-                            <Col md>
+                            <Col md key={critter.name}>
                                 <CritterCard critter={critter} />
                             </Col>
                         ))}
