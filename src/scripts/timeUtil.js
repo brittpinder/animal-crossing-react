@@ -99,7 +99,7 @@ TimeUtil.getTimePeriodsAsText = function(timePeriods) {
     for (let i = 0; i < timePeriods.length; i++) {
         textString += (getHourAsText(timePeriods[i].start) + " - " + getHourAsText(timePeriods[i].end));
         if (i !== timePeriods.length - 1) {
-            textString += " & ";
+            textString += ", ";
         }
     }
     return textString;
