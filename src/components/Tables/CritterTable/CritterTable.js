@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCheck } from '@fortawesome/free-solid-svg-icons'
 
 import TimeUtil from '../../../scripts/timeUtil';
+import SortDirection from '../SortDirection/SortDirection';
 
 const sortType = {
     NAME: 'name',
@@ -42,6 +43,13 @@ class CritterTable extends Component {
         this.sortBy(sortType.PRICE);
     }
 
+    getSortDirection = (sortingType) => {
+        if (this.state.sortedBy === sortingType) {
+            return this.state.ascending ? "up" : "down";
+        }
+        return "none";
+    }
+
     getSeasonClass = (season, dark) => {
         let seasonClass = null;
         switch (season) {
@@ -59,14 +67,21 @@ class CritterTable extends Component {
         for (const month of TimeUtil.months) {
             monthHeaders.push(<th key={month.shortName}>{month.shortName}</th>);
         }
+        let priceClasses = [styles.PriceColumn, styles.SortableColumn];
 
         return (
             <Table bordered striped responsive size="sm" className={styles.Table}>
                 <thead>
                     <tr>
-                        <th onClick={this.onNameClicked}>Name</th>
+                        <th onClick={this.onNameClicked} className={styles.SortableColumn}>
+                            Name
+                            <SortDirection direction={this.getSortDirection(sortType.NAME)}/>
+                        </th>
                         <th>Image</th>
-                        <th onClick={this.onPriceClicked}>Price</th>
+                        <th onClick={this.onPriceClicked} className={priceClasses.join(' ')}>
+                            Price
+                            <SortDirection direction={this.getSortDirection(sortType.PRICE)}/>
+                        </th>
                         <th>Location</th>
                         <th>Time</th>
                         {monthHeaders}
