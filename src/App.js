@@ -1,5 +1,7 @@
 import React from 'react';
 
+import styles from './App.module.css';
+
 import { Route, Switch } from 'react-router-dom';
 import Container from 'react-bootstrap/Container'
 import TopBar from './components/Navigation/TopBar/TopBar';
@@ -9,7 +11,7 @@ import Bugs from './containers/Bugs/Bugs';
 
 function App() {
   return (
-    <div>
+    <div className={styles.App}>
         <TopBar />
         <Container>
           <Switch>
