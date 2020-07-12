@@ -1,0 +1,9 @@
+.BellPrice > img {
+    width: 20px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.BellPrice > span {
+    text-align: left;
+}
