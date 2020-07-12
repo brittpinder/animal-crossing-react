@@ -8,7 +8,40 @@ import { faCheck } from '@fortawesome/free-solid-svg-icons'
 
 import TimeUtil from '../../../scripts/timeUtil';
 
+const sortType = {
+    NAME: 'name',
+    PRICE: 'price'
+}
+
 class CritterTable extends Component {
+    state = {
+        critters: this.props.critterData,
+        sortedBy: sortType.NAME,
+        ascending: true
+    }
+
+    sortBy = (sortingType, ascendingFn, descendingFn) => {
+        let sortedCritters = [...this.state.critters];
+        let ascending = true;
+        if (this.state.sortedBy === sortingType && this.state.ascending) {
+            ascending = false;
+        }
+        sortedCritters.sort(ascending ? ascendingFn : descendingFn);
+        this.setState({critters: sortedCritters, sortedBy: sortingType, ascending: ascending});
+    }
+
+    onNameClicked = () => {
+        this.sortBy(sortType.NAME,
+            (a, b) => (a.name > b.name) ? 1 : -1,
+            (a, b) => (a.name < b.name) ? 1 : -1);
+    }
+
+    onPriceClicked = () => {
+        this.sortBy(sortType.PRICE,
+            (a, b) => (a.price > b.price) ? 1 : -1,
+            (a, b) => (a.price < b.price) ? 1 : -1);
+    }
+
     getSeasonClass = (season, dark) => {
         let seasonClass = null;
         switch (season) {
@@ -31,16 +64,16 @@ class CritterTable extends Component {
             <Table bordered striped responsive size="sm" className={styles.Table}>
                 <thead>
                     <tr>
-                        <th>Name</th>
+                        <th onClick={this.onNameClicked}>Name</th>
                         <th>Image</th>
-                        <th>Price</th>
+                        <th onClick={this.onPriceClicked}>Price</th>
                         <th>Location</th>
                         <th>Time</th>
                         {monthHeaders}
                     </tr>
                 </thead>
                 <tbody>
-                    {this.props.critterData.map((critter, index) => (
+                    {this.state.critters.map((critter, index) => (
                         <tr key={critter.name}>
                             <td>{critter.name}</td>
                             <td><img src={require("../../../" + critter.image)} alt={critter.name}/></td>
