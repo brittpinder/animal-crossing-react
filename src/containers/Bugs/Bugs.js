@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import CritterUtil from '../../scripts/critterUtil';
 import CritterTable from '../../components/Tables/CritterTable/CritterTable';

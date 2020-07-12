@@ -16,6 +16,7 @@ class CritterTable extends Component {
             case "Spring": seasonClass = dark ? styles.SpringDark : styles.Spring; break;
             case "Summer": seasonClass = dark ? styles.SummerDark : styles.Summer; break;
             case "Fall": seasonClass = dark ? styles.FallDark : styles.Fall; break;
+            default:
         }
         return seasonClass;
     }
@@ -42,12 +43,12 @@ class CritterTable extends Component {
                     {this.props.critterData.map((critter, index) => (
                         <tr key={critter.name}>
                             <td>{critter.name}</td>
-                            <td><img src={require("../../../" + critter.image)} /></td>
+                            <td><img src={require("../../../" + critter.image)} alt={critter.name}/></td>
                             <td>{critter.price}</td>
                             <td>{critter.location}</td>
                             <td>{critter.timeText}</td>
                             {TimeUtil.months.map((month) => (
-                                <td key={month.shortName} className={this.getSeasonClass(month.season, index % 2 == 0)}>
+                                <td key={month.shortName} className={this.getSeasonClass(month.season, index % 2 === 0)}>
                                     {critter.months.includes(month.id) ? <FontAwesomeIcon icon={faCheck} /> : null
                                 }</td>
                             ))}
