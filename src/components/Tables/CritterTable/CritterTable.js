@@ -23,7 +23,7 @@ class CritterTable extends Component {
     render() {
         const monthHeaders = [];
         for (const month of TimeUtil.months) {
-            monthHeaders.push(<th>{month.shortName}</th>);
+            monthHeaders.push(<th key={month.shortName}>{month.shortName}</th>);
         }
 
         return (
@@ -47,7 +47,7 @@ class CritterTable extends Component {
                             <td>{critter.location}</td>
                             <td>{critter.timeText}</td>
                             {TimeUtil.months.map((month) => (
-                                <td className={this.getSeasonClass(month.season, index % 2 == 0)}>
+                                <td key={month.shortName} className={this.getSeasonClass(month.season, index % 2 == 0)}>
                                     {critter.months.includes(month.id) ? <FontAwesomeIcon icon={faCheck} /> : null
                                 }</td>
                             ))}
