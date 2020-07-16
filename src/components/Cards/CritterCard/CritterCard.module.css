@@ -7,7 +7,7 @@
 }
 
 .CritterCard > img{
-    max-width: 100px;
+    max-width: 128px;
     margin: auto;
     margin-top: 20px;
 }
