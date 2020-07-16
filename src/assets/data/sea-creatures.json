@@ -1,0 +1,330 @@
+[
+    {
+        "name": "Abalone",
+        "image": "assets/images/icons/sea-creatures/abalone.png",
+        "price": 2000,
+        "months": [1,6,7,8,9,10,11,12],
+        "time": [
+            {
+                "start": 16,
+                "end": 9
+            }
+        ]
+    },
+    {
+        "name": "Acorn Barnacle",
+        "image": "assets/images/icons/sea-creatures/acorn-barnacle.png",
+        "price": 600,
+        "months": [1,2,3,4,5,6,7,8,9,10,11,12]
+    },
+    {
+        "name": "Chambered Nautilus",
+        "image": "assets/images/icons/sea-creatures/chambered-nautilus.png",
+        "price": 1800,
+        "months": [3,4,5,6,9,10,11],
+        "time": [
+            {
+                "start": 16,
+                "end": 9
+            }
+        ]
+    },
+    {
+        "name": "Dungeness Crab",
+        "image": "assets/images/icons/sea-creatures/dungeness-crab.png",
+        "price": 1900,
+        "months": [1,2,3,4,5,11,12]
+    },
+    {
+        "name": "Firefly Squid",
+        "image": "assets/images/icons/sea-creatures/firefly-squid.png",
+        "price": 1400,
+        "months": [3,4,5,6],
+        "time": [
+            {
+                "start": 21,
+                "end": 4
+            }
+        ]
+    },
+    {
+        "name": "Flatworm",
+        "image": "assets/images/icons/sea-creatures/flatworm.png",
+        "price": 700,
+        "months": [8,9],
+        "time": [
+            {
+                "start": 16,
+                "end": 9
+            }
+        ]
+    },
+    {
+        "name": "Gazami Crab",
+        "image": "assets/images/icons/sea-creatures/gazami-crab.png",
+        "price": 2200,
+        "months": [6,7,8,9,10,11]
+    },
+    {
+        "name": "Giant Isopod",
+        "image": "assets/images/icons/sea-creatures/giant-isopod.png",
+        "price": 12000,
+        "months": [7,8,9,10],
+        "time": [
+            {
+                "start": 9,
+                "end": 16
+            },
+            {
+                "start": 21,
+                "end": 4
+            }
+        ]
+    },
+    {
+        "name": "Gigas Giant Clam",
+        "image": "assets/images/icons/sea-creatures/gigas-giant-clam.png",
+        "price": 15000,
+        "months": [5,6,7,8,9]
+    },
+    {
+        "name": "Horseshoe Crab",
+        "image": "assets/images/icons/sea-creatures/horseshoe-crab.png",
+        "price": 2500,
+        "months": [7,8,9],
+        "time": [
+            {
+                "start": 21,
+                "end": 4
+            }
+        ]
+    },
+    {
+        "name": "Lobster",
+        "image": "assets/images/icons/sea-creatures/lobster.png",
+        "price": 4500,
+        "months": [1,4,5,6,12]
+    },
+    {
+        "name": "Mantis Shrimp",
+        "image": "assets/images/icons/sea-creatures/mantis-shrimp.png",
+        "price": 2500,
+        "months": [1,2,3,4,5,6,7,8,9,10,11,12],
+        "time": [
+            {
+                "start": 16,
+                "end": 9
+            }
+        ]
+    },
+    {
+        "name": "Moon Jellyfish",
+        "image": "assets/images/icons/sea-creatures/moon-jellyfish.png",
+        "price": 600,
+        "months": [7,8,9]
+    },
+    {
+        "name": "Mussel",
+        "image": "assets/images/icons/sea-creatures/mussel.png",
+        "price": 1500,
+        "months": [6,7,8,9,10,11,12]
+    },
+    {
+        "name": "Octopus",
+        "image": "assets/images/icons/sea-creatures/octopus.png",
+        "price": 1200,
+        "months": [1,2,3,4,5,6,7,8,9,10,11,12]
+    },
+    {
+        "name": "Oyster",
+        "image": "assets/images/icons/sea-creatures/oyster.png",
+        "price": 1100,
+        "months": [1,2,9,10,11,12]
+    },
+    {
+        "name": "Pearl Oyster",
+        "image": "assets/images/icons/sea-creatures/pearl-oyster.png",
+        "price": 2800,
+        "months": [1,2,3,4,5,6,7,8,9,10,11,12]
+    },
+    {
+        "name": "Red King Crab",
+        "image": "assets/images/icons/sea-creatures/red-king-crab.png",
+        "price": 8000,
+        "months": [1,2,3,11,12]
+    },
+    {
+        "name": "Scallop",
+        "image": "assets/images/icons/sea-creatures/scallop.png",
+        "price": 1200,
+        "months": [1,2,3,4,5,6,7,8,9,10,11,12]
+    },
+    {
+        "name": "Sea Anemone",
+        "image": "assets/images/icons/sea-creatures/sea-anemone.png",
+        "price": 500,
+        "months": [1,2,3,4,5,6,7,8,9,10,11,12]
+    },
+    {
+        "name": "Sea Cucumber",
+        "image": "assets/images/icons/sea-creatures/sea-cucumber.png",
+        "price": 500,
+        "months": [1,2,3,4,11,12]
+    },
+    {
+        "name": "Sea Grapes",
+        "image": "assets/images/icons/sea-creatures/sea-grapes.png",
+        "price": 900,
+        "months": [6,7,8,9]
+    },
+    {
+        "name": "Sea Pig",
+        "image": "assets/images/icons/sea-creatures/sea-pig.png",
+        "price": 10000,
+        "months": [1,2,11,12],
+        "time": [
+            {
+                "start": 16,
+                "end": 9
+            }
+        ]
+    },
+    {
+        "name": "Sea Pineapple",
+        "image": "assets/images/icons/sea-creatures/sea-pineapple.png",
+        "price": 1500,
+        "months": [4,5,6,7,8]
+    },
+    {
+        "name": "Sea Slug",
+        "image": "assets/images/icons/sea-creatures/sea-slug.png",
+        "price": 600,
+        "months": [1,2,3,4,5,6,7,8,9,10,11,12]
+    },
+    {
+        "name": "Sea Star",
+        "image": "assets/images/icons/sea-creatures/sea-star.png",
+        "price": 500,
+        "months": [1,2,3,4,5,6,7,8,9,10,11,12]
+    },
+    {
+        "name": "Sea Urchin",
+        "image": "assets/images/icons/sea-creatures/sea-urchin.png",
+        "price": 1700,
+        "months": [5,6,7,8,9]
+    },
+    {
+        "name": "Seaweed",
+        "image": "assets/images/icons/sea-creatures/seaweed.png",
+        "price": 600,
+        "months": [1,2,3,4,5,6,7,10,11,12]
+    },
+    {
+        "name": "Slate Pencil Urchin",
+        "image": "assets/images/icons/sea-creatures/slate-pencil-urchin.png",
+        "price": 2000,
+        "months": [5,6,7,8,9],
+        "time": [
+            {
+                "start": 16,
+                "end": 9
+            }
+        ]
+    },
+    {
+        "name": "Snow Crab",
+        "image": "assets/images/icons/sea-creatures/snow-crab.png",
+        "price": 6000,
+        "months": [1,2,3,4,11,12]
+    },
+    {
+        "name": "Spider Crab",
+        "image": "assets/images/icons/sea-creatures/spider-crab.png",
+        "price": 12000,
+        "months": [3,4]
+    },
+    {
+        "name": "Spiny Lobster",
+        "image": "assets/images/icons/sea-creatures/spiny-lobster.png",
+        "price": 5000,
+        "months": [10,11,12],
+        "time": [
+            {
+                "start": 21,
+                "end": 4
+            }
+        ]
+    },
+    {
+        "name": "Spotted Garden Eel",
+        "image": "assets/images/icons/sea-creatures/spotted-garden-eel.png",
+        "price": 1100,
+        "months": [5,6,7,8,9,10],
+        "time": [
+            {
+                "start": 4,
+                "end": 21
+            }
+        ]
+    },
+    {
+        "name": "Sweet Shrimp",
+        "image": "assets/images/icons/sea-creatures/sweet-shrimp.png",
+        "price": 1400,
+        "months": [1,2,9,10,11,12],
+        "time": [
+            {
+                "start": 16,
+                "end": 9
+            }
+        ]
+    },
+    {
+        "name": "Tiger Prawn",
+        "image": "assets/images/icons/sea-creatures/tiger-prawn.png",
+        "price": 3000,
+        "months": [6,7,8,9],
+        "time": [
+            {
+                "start": 16,
+                "end": 9
+            }
+        ]
+    },
+    {
+        "name": "Turban Shell",
+        "image": "assets/images/icons/sea-creatures/turban-shell.png",
+        "price": 1000,
+        "months": [3,4,5,9,10,11,12]
+    },
+    {
+        "name": "Umbrella Octopus",
+        "image": "assets/images/icons/sea-creatures/umbrella-octopus.png",
+        "price": 6000,
+        "months": [3,4,5,9,10,11]
+    },
+    {
+        "name": "Vampire Squid",
+        "image": "assets/images/icons/sea-creatures/vampire-squid.png",
+        "price": 10000,
+        "months": [5,6,7,8],
+        "time": [
+            {
+                "start": 16,
+                "end": 9
+            }
+        ]
+    },
+    {
+        "name": "Venus' Flower Basket",
+        "image": "assets/images/icons/sea-creatures/venus-flower-basket.png",
+        "price": 5000,
+        "months": [1,2,10,11,12]
+    },
+    {
+        "name": "Whelk",
+        "image": "assets/images/icons/sea-creatures/whelk.png",
+        "price": 1000,
+        "months": [1,2,3,4,5,6,7,8,9,10,11,12]
+    }
+    ]

@@ -10,6 +10,7 @@ import Footer from './components/Footer/Footer';
 import Home from './containers/Home/Home';
 import Fish from './containers/Fish/Fish';
 import Bugs from './containers/Bugs/Bugs';
+import SeaCreatures from './containers/SeaCreatures/SeaCreatures';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Switch>
             <Route path='/fish' component={Fish} />
             <Route path='/bugs' component={Bugs} />
+            <Route path='/sea-creatures' component={SeaCreatures} />
             <Route path='/' exact component={Home} />
           </Switch>
         </Container>

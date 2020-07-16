@@ -5,7 +5,7 @@ import CritterTable from '../../components/Tables/CritterTable/CritterTable';
 
 const Bugs = (props) => (
     <React.Fragment>
-        <CritterTable critterData={CritterUtil.bugData}/>
+        <CritterTable critterData={CritterUtil.bugData} showLocation/>
     </React.Fragment>
 );
 

@@ -1,17 +1,22 @@
 import fishData from '../assets/data/fish.json';
 import bugData from '../assets/data/bugs.json';
+import seaCreatureData from '../assets/data/sea-creatures.json';
 import TimeUtil from './timeUtil';
 
 let CritterUtil = {};
 
 CritterUtil.fishData = fishData;
 CritterUtil.bugData = bugData;
+CritterUtil.seaCreatureData = seaCreatureData;
 
 CritterUtil.fishData.forEach(function(fish) {
     fish.timeText = fish.time ? TimeUtil.getTimePeriodsAsText(fish.time) : "All Day";
 });
 CritterUtil.bugData.forEach(function(bug) {
     bug.timeText = bug.time ? TimeUtil.getTimePeriodsAsText(bug.time) : "All Day";
+});
+CritterUtil.seaCreatureData.forEach(function(seaCreature) {
+    seaCreature.timeText = seaCreature.time ? TimeUtil.getTimePeriodsAsText(seaCreature.time) : "All Day";
 });
 
 const getCritterNewThisMonth = function(critterData) {
@@ -35,10 +40,15 @@ CritterUtil.getBugsNewThisMonth = function() {
     return getCritterNewThisMonth(CritterUtil.bugData);
 }
 
+CritterUtil.getSeaCreaturesNewThisMonth = function() {
+    return getCritterNewThisMonth(CritterUtil.seaCreatureData);
+}
+
 CritterUtil.getCrittersNewThisMonth = function() {
     const newFish = CritterUtil.getFishNewThisMonth();
     const newBugs = CritterUtil.getBugsNewThisMonth();
-    return [...newFish, ...newBugs];
+    const newSeaCreatures = CritterUtil.getSeaCreaturesNewThisMonth();
+    return [...newFish, ...newBugs, ...newSeaCreatures];
 }
 
 export default CritterUtil;

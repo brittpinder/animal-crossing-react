@@ -3,10 +3,10 @@ import React from 'react';
 import CritterUtil from '../../scripts/critterUtil';
 import CritterTable from '../../components/Tables/CritterTable/CritterTable';
 
-const Fish = (props) => (
+const SeaCreatures = (props) => (
     <React.Fragment>
-        <CritterTable critterData={CritterUtil.fishData} showLocation/>
+        <CritterTable critterData={CritterUtil.seaCreatureData}/>
     </React.Fragment>
 );
 
-export default Fish;
+export default SeaCreatures;

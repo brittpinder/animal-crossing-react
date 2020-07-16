@@ -14,6 +14,7 @@ const topBar = () => (
             <Nav className="mr-auto">
                 <Nav.Link as={Link} to="/fish" >Fish</Nav.Link>
                 <Nav.Link as={Link} to="/bugs" >Bugs</Nav.Link>
+                <Nav.Link as={Link} to="/sea-creatures" >Sea Creatures</Nav.Link>
             </Nav>
     </Navbar>
 );

@@ -17,6 +17,10 @@
     border: 0;
 }
 
+.Table img {
+    max-width: 50px;
+}
+
 .Winter {
     background-color: #6dcff6;
 }

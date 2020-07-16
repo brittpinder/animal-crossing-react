@@ -82,7 +82,7 @@ class CritterTable extends Component {
                             Price
                             <SortDirection direction={this.getSortDirection(sortType.PRICE)}/>
                         </th>
-                        <th>Location</th>
+                        {this.props.showLocation ? <th>Location</th> : null}
                         <th>Time</th>
                         {monthHeaders}
                     </tr>
@@ -93,7 +93,7 @@ class CritterTable extends Component {
                             <td>{critter.name}</td>
                             <td><img src={require("../../../" + critter.image)} alt={critter.name}/></td>
                             <td>{critter.price}</td>
-                            <td>{critter.location}</td>
+                            {this.props.showLocation ? <td>{critter.location}</td> : null}
                             <td>{critter.timeText}</td>
                             {TimeUtil.months.map((month) => (
                                 <td key={month.shortName} className={this.getSeasonClass(month.season, index % 2 === 0)}>
