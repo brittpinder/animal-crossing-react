@@ -3,7 +3,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import styles from './App.module.css';
 
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch, Redirect } from 'react-router-dom';
 import Container from 'react-bootstrap/Container'
 import TopBar from './components/Navigation/TopBar/TopBar';
 import Footer from './components/Footer/Footer';
@@ -22,6 +22,7 @@ function App() {
             <Route path='/bugs' component={Bugs} />
             <Route path='/sea-creatures' component={SeaCreatures} />
             <Route path='/' exact component={Home} />
+            <Redirect from='/*' to="/" />
           </Switch>
         </Container>
         <Footer/>
