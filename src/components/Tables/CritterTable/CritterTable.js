@@ -3,11 +3,12 @@ import Table from 'react-bootstrap/Table';
 
 import styles from './CritterTable.module.css';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCheck } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCheck } from '@fortawesome/free-solid-svg-icons';
 
 import TimeUtil from '../../../scripts/timeUtil';
 import SortDirection from '../SortDirection/SortDirection';
+import Search from '../Search/Search';
 
 const sortType = {
     NAME: 'name',
@@ -16,35 +17,56 @@ const sortType = {
 
 class CritterTable extends Component {
     state = {
-        critters: this.props.critterData,
-        sortedBy: sortType.NAME,
+        filteredCritters: this.props.critterData,
+        sortingType: sortType.NAME,
         ascending: true
     }
 
-    sortBy = (sortingType) => {
-        let sortedCritters = [...this.state.critters];
+    sortArray = (array, ascending, sortingType) => {
+        if (ascending) {
+            array.sort((a, b) => (a[sortingType] > b[sortingType]) ? 1 : -1);
+        } else {
+            array.sort((a, b) => (a[sortingType] < b[sortingType]) ? 1 : -1);
+        }
+    }
+
+    sort = (sortingType) => {
+        let sortedCritters = [...this.state.filteredCritters];
         let ascending = true;
-        if (this.state.sortedBy === sortingType && this.state.ascending) {
+        if (this.state.sortingType === sortingType && this.state.ascending) {
             ascending = false;
         }
-        if (ascending) {
-            sortedCritters.sort((a, b) => (a[sortingType] > b[sortingType]) ? 1 : -1);
-        } else {
-            sortedCritters.sort((a, b) => (a[sortingType] < b[sortingType]) ? 1 : -1);
+        this.sortArray(sortedCritters, ascending, sortingType);
+        this.setState({filteredCritters: sortedCritters, sortingType: sortingType, ascending: ascending});
+    }
+
+    filterAndSort = (text) => {
+        let allCritters = [...this.props.critterData];
+        let filteredCritters = [];
+        const filterText = text.toLowerCase();
+        for (const critter of allCritters) {
+            if (critter.name.toLowerCase().includes(filterText)) {
+                filteredCritters.push(critter);
+            }
         }
-        this.setState({critters: sortedCritters, sortedBy: sortingType, ascending: ascending});
+        this.sortArray(filteredCritters, this.state.ascending, this.state.sortingType);
+        this.setState({filteredCritters: filteredCritters});
     }
 
     onNameClicked = () => {
-        this.sortBy(sortType.NAME);
+        this.sort(sortType.NAME);
     }
 
     onPriceClicked = () => {
-        this.sortBy(sortType.PRICE);
+        this.sort(sortType.PRICE);
+    }
+
+    onSearchTextChanged = (event) => {
+        this.filterAndSort(event.target.value);
     }
 
     getSortDirection = (sortingType) => {
-        if (this.state.sortedBy === sortingType) {
+        if (this.state.sortingType === sortingType) {
             return this.state.ascending ? "up" : "down";
         }
         return "none";
@@ -70,40 +92,43 @@ class CritterTable extends Component {
         let priceClasses = [styles.PriceColumn, styles.SortableColumn];
 
         return (
-            <Table bordered striped responsive size="sm" className={styles.Table}>
-                <thead>
-                    <tr>
-                        <th onClick={this.onNameClicked} className={styles.SortableColumn}>
-                            Name
-                            <SortDirection direction={this.getSortDirection(sortType.NAME)}/>
-                        </th>
-                        <th>Image</th>
-                        <th onClick={this.onPriceClicked} className={priceClasses.join(' ')}>
-                            Price
-                            <SortDirection direction={this.getSortDirection(sortType.PRICE)}/>
-                        </th>
-                        {this.props.showLocation ? <th>Location</th> : null}
-                        <th>Time</th>
-                        {monthHeaders}
-                    </tr>
-                </thead>
-                <tbody>
-                    {this.state.critters.map((critter, index) => (
-                        <tr key={critter.name}>
-                            <td>{critter.name}</td>
-                            <td><img src={require("../../../" + critter.image)} alt={critter.name}/></td>
-                            <td>{critter.price}</td>
-                            {this.props.showLocation ? <td>{critter.location}</td> : null}
-                            <td>{critter.timeText}</td>
-                            {TimeUtil.months.map((month) => (
-                                <td key={month.shortName} className={this.getSeasonClass(month.season, index % 2 === 0)}>
-                                    {critter.months.includes(month.id) ? <FontAwesomeIcon icon={faCheck} /> : null
-                                }</td>
-                            ))}
+            <React.Fragment>
+                <Search onTextChanged={this.onSearchTextChanged.bind(this)}/>
+                <Table bordered striped responsive size="sm" className={styles.Table}>
+                    <thead>
+                        <tr>
+                            <th onClick={this.onNameClicked} className={styles.SortableColumn}>
+                                Name
+                                <SortDirection direction={this.getSortDirection(sortType.NAME)}/>
+                            </th>
+                            <th>Image</th>
+                            <th onClick={this.onPriceClicked} className={priceClasses.join(' ')}>
+                                Price
+                                <SortDirection direction={this.getSortDirection(sortType.PRICE)}/>
+                            </th>
+                            {this.props.showLocation ? <th>Location</th> : null}
+                            <th>Time</th>
+                            {monthHeaders}
                         </tr>
-                    ))}
-                </tbody>
-            </Table>
+                    </thead>
+                    <tbody>
+                        {this.state.filteredCritters.map((critter, index) => (
+                            <tr key={critter.name}>
+                                <td>{critter.name}</td>
+                                <td><img src={require("../../../" + critter.image)} alt={critter.name}/></td>
+                                <td>{critter.price}</td>
+                                {this.props.showLocation ? <td>{critter.location}</td> : null}
+                                <td>{critter.timeText}</td>
+                                {TimeUtil.months.map((month) => (
+                                    <td key={month.shortName} className={this.getSeasonClass(month.season, index % 2 === 0)}>
+                                        {critter.months.includes(month.id) ? <FontAwesomeIcon icon={faCheck} /> : null
+                                    }</td>
+                                ))}
+                            </tr>
+                        ))}
+                    </tbody>
+                </Table>
+            </React.Fragment>
         );
     }
 }

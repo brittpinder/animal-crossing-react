@@ -1,0 +1,13 @@
+.SearchIcon {
+    background-color: #fef8e4;
+    border-radius: 1.5rem;
+}
+
+.TextBox {
+    background-color: #fef8e4;
+    border-radius: 1.5rem;
+}
+
+.TextBox:focus {
+    background-color: #f0ebda;
+}
