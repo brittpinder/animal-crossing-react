@@ -6,6 +6,8 @@ import styles from './CritterTable.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
 
+import _ from 'lodash/lang';
+
 import TimeUtil from '../../../scripts/timeUtil';
 import SortDirection from '../SortDirection/SortDirection';
 import Search from '../Search/Search';
@@ -31,7 +33,7 @@ class CritterTable extends Component {
     }
 
     sort = (sortingType) => {
-        let sortedCritters = [...this.state.filteredCritters];
+        let sortedCritters = _.cloneDeep(this.state.filteredCritters);
         let ascending = true;
         if (this.state.sortingType === sortingType && this.state.ascending) {
             ascending = false;
@@ -41,10 +43,9 @@ class CritterTable extends Component {
     }
 
     filterAndSort = (text) => {
-        let allCritters = [...this.props.critterData];
         let filteredCritters = [];
         const filterText = text.toLowerCase();
-        for (const critter of allCritters) {
+        for (const critter of this.props.critterData) {
             if (critter.name.toLowerCase().includes(filterText)) {
                 filteredCritters.push(critter);
             }
