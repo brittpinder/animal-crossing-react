@@ -14,7 +14,7 @@ const blathersMessage = (props) => (
             </Col>
             <Col sm={9}>
                 <img id={styles.bubble} src={SpeechBubble} alt="speech-bubble"/>
-                <div id={styles.bubbletext}>Hoo hoo! Look at all the critters you can find in {props.month}!</div>
+                <div id={styles.bubbletext}>Hoo hoo! Look at all the critters that are new in {props.month}!</div>
                 <div id={styles.name}>Blathers</div>
             </Col>
         </Row>
