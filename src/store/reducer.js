@@ -1,7 +1,7 @@
 import * as actionTypes from './actions';
 
 const initialState = {
-    hemisphere: 'North'
+    isNorthernHemisphere: true
 }
 
 const reducer = (state = initialState, action) => {
@@ -9,7 +9,7 @@ const reducer = (state = initialState, action) => {
         case actionTypes.TOGGLE_HEMISPHERE:
             return {
                 ...state,
-                hemisphere: state.hemisphere === 'North' ? 'South' : 'North'
+                isNorthernHemisphere: !state.isNorthernHemisphere
             }
         default:
             return state;

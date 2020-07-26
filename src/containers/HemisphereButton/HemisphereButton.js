@@ -6,15 +6,16 @@ import Button from 'react-bootstrap/Button';
 
 class HemisphereButton extends Component {
     render() {
+        const hemisphere = this.props.isNorthernHemisphere ? 'North' : 'South';
         return (
-            <Button onClick={this.props.onToggleHemisphere}>{this.props.hemisphere}</Button>
+            <Button onClick={this.props.onToggleHemisphere}>{hemisphere}</Button>
         );
     }
 }
 
 const mapStateToProps = state => {
     return {
-        hemisphere: state.hemisphere
+        isNorthernHemisphere: state.isNorthernHemisphere
     }
 }
 

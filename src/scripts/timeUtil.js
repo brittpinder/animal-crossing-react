@@ -5,73 +5,85 @@ TimeUtil.months = [
         id: 1,
         name: "January",
         shortName: "Jan",
-        season: "Winter"
+        northSeason: "Winter",
+        southSeason: "Summer"
     },
     {
         id: 2,
         name: "February",
         shortName: "Feb",
-        season: "Winter"
+        northSeason: "Winter",
+        southSeason: "Summer"
     },
     {
         id: 3,
         name: "March",
         shortName: "Mar",
-        season: "Spring"
+        northSeason: "Spring",
+        southSeason: "Fall"
     },
     {
         id: 4,
         name: "April",
         shortName: "Apr",
-        season: "Spring"
+        northSeason: "Spring",
+        southSeason: "Fall"
     },
     {
         id: 5,
         name: "May",
         shortName: "May",
-        season: "Spring"
+        northSeason: "Spring",
+        southSeason: "Fall"
     },
     {
         id: 6,
         name: "June",
         shortName: "Jun",
-        season: "Summer"
+        northSeason: "Summer",
+        southSeason: "Winter"
     },
     {
         id: 7,
         name: "July",
         shortName: "Jul",
-        season: "Summer"
+        northSeason: "Summer",
+        southSeason: "Winter"
     },
     {
         id: 8,
         name: "August",
         shortName: "Aug",
-        season: "Summer"
+        northSeason: "Summer",
+        southSeason: "Winter"
     },
     {
         id: 9,
         name: "September",
         shortName: "Sep",
-        season: "Fall"
+        northSeason: "Fall",
+        southSeason: "Spring"
     },
     {
         id: 10,
         name: "October",
         shortName: "Oct",
-        season: "Fall"
+        northSeason: "Fall",
+        southSeason: "Spring"
     },
     {
         id: 11,
         name: "November",
         shortName: "Nov",
-        season: "Fall"
+        northSeason: "Fall",
+        southSeason: "Spring"
     },
     {
         id: 12,
         name: "December",
         shortName: "Dec",
-        season: "Winter"
+        northSeason: "Winter",
+        southSeason: "Summer"
     },
 ];
 
@@ -88,6 +100,14 @@ TimeUtil.getCurrentMonthName = function() {
 TimeUtil.getLastMonthId = function() {
     const currentMonthId = this.getCurrentMonthId();
     return currentMonthId === 1 ? 12 : currentMonthId - 1;
+}
+
+TimeUtil.getSouthMonth = function(northMonthId) {
+    let southMonth = northMonthId + 6;
+    if (southMonth > 12) {
+        southMonth -= 12;
+    }
+    return southMonth;
 }
 
 const getHourAsText = function(hour) {

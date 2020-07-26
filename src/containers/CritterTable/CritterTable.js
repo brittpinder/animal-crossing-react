@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+
 import Table from 'react-bootstrap/Table';
-
 import styles from './CritterTable.module.css';
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
 
@@ -73,8 +73,9 @@ class CritterTable extends Component {
         return "none";
     }
 
-    getSeasonClass = (season, dark) => {
+    getSeasonClass = (month, dark) => {
         let seasonClass = null;
+        let season = this.props.isNorthernHemisphere ? month.northSeason : month.southSeason;
         switch (season) {
             case "Winter": seasonClass = dark ? styles.WinterDark : styles.Winter; break;
             case "Spring": seasonClass = dark ? styles.SpringDark : styles.Spring; break;
@@ -83,6 +84,10 @@ class CritterTable extends Component {
             default:
         }
         return seasonClass;
+    }
+
+    getMonthsForCritter = (critter) => {
+        return this.props.isNorthernHemisphere ? critter.months : critter.southMonths;
     }
 
     render() {
@@ -121,9 +126,9 @@ class CritterTable extends Component {
                                 {this.props.showLocation ? <td>{critter.location}</td> : null}
                                 <td>{critter.timeText}</td>
                                 {TimeUtil.months.map((month) => (
-                                    <td key={month.shortName} className={this.getSeasonClass(month.season, index % 2 === 0)}>
-                                        {critter.months.includes(month.id) ? <FontAwesomeIcon icon={faCheck} /> : null
-                                    }</td>
+                                    <td key={month.shortName} className={this.getSeasonClass(month, index % 2 === 0)}>
+                                        {this.getMonthsForCritter(critter).includes(month.id) ? <FontAwesomeIcon icon={faCheck} /> : null}
+                                    </td>
                                 ))}
                             </tr>
                         ))}
@@ -134,4 +139,10 @@ class CritterTable extends Component {
     }
 }
 
-export default CritterTable;
+const mapStateToProps = state => {
+    return {
+        isNorthernHemisphere: state.isNorthernHemisphere
+    }
+}
+
+export default connect(mapStateToProps)(CritterTable);

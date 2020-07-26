@@ -3,51 +3,53 @@ import bugData from '../assets/data/bugs.json';
 import seaCreatureData from '../assets/data/sea-creatures.json';
 import TimeUtil from './timeUtil';
 
-let CritterUtil = {};
+const initializeCritterData = function(critterData) {
+    critterData.forEach(function(critter) {
+        critter.timeText = critter.time ? TimeUtil.getTimePeriodsAsText(critter.time) : "All Day";
+        critter.southMonths = [...critter.months];
+        for (const i in critter.southMonths) {
+            critter.southMonths[i] = TimeUtil.getSouthMonth(critter.southMonths[i]);
+        }
+    });
+    return critterData;
+}
 
-CritterUtil.fishData = fishData;
-CritterUtil.bugData = bugData;
-CritterUtil.seaCreatureData = seaCreatureData;
-
-CritterUtil.fishData.forEach(function(fish) {
-    fish.timeText = fish.time ? TimeUtil.getTimePeriodsAsText(fish.time) : "All Day";
-});
-CritterUtil.bugData.forEach(function(bug) {
-    bug.timeText = bug.time ? TimeUtil.getTimePeriodsAsText(bug.time) : "All Day";
-});
-CritterUtil.seaCreatureData.forEach(function(seaCreature) {
-    seaCreature.timeText = seaCreature.time ? TimeUtil.getTimePeriodsAsText(seaCreature.time) : "All Day";
-});
-
-const getCritterNewThisMonth = function(critterData) {
+const getCrittersNewThisMonth = function(critterData, isNorthernHemisphere) {
     let newCritters = [];
     const currentMonthId = TimeUtil.getCurrentMonthId();
     const lastMonthId = TimeUtil.getLastMonthId();
 
     critterData.forEach(function(critter) {
-        if (critter.months.includes(currentMonthId) && !critter.months.includes(lastMonthId)) {
+        const months = isNorthernHemisphere ? critter.months : critter.southMonths;
+        if (months.includes(currentMonthId) && !months.includes(lastMonthId)) {
             newCritters.push(critter);
         }
     });
     return newCritters;
 }
 
-CritterUtil.getFishNewThisMonth = function() {
-    return getCritterNewThisMonth(CritterUtil.fishData);
+let CritterUtil = {};
+
+CritterUtil.fishData = initializeCritterData(fishData);
+CritterUtil.bugData = initializeCritterData(bugData);
+CritterUtil.seaCreatureData = initializeCritterData(seaCreatureData);
+
+CritterUtil.getFishNewThisMonth = function(isNorthernHemisphere) {
+    return getCrittersNewThisMonth(CritterUtil.fishData, isNorthernHemisphere);
 }
 
-CritterUtil.getBugsNewThisMonth = function() {
-    return getCritterNewThisMonth(CritterUtil.bugData);
+CritterUtil.getBugsNewThisMonth = function(isNorthernHemisphere) {
+    return getCrittersNewThisMonth(CritterUtil.bugData, isNorthernHemisphere);
 }
 
-CritterUtil.getSeaCreaturesNewThisMonth = function() {
-    return getCritterNewThisMonth(CritterUtil.seaCreatureData);
+CritterUtil.getSeaCreaturesNewThisMonth = function(isNorthernHemisphere) {
+    return getCrittersNewThisMonth(CritterUtil.seaCreatureData, isNorthernHemisphere);
 }
 
-CritterUtil.getCrittersNewThisMonth = function() {
-    const newFish = CritterUtil.getFishNewThisMonth();
-    const newBugs = CritterUtil.getBugsNewThisMonth();
-    const newSeaCreatures = CritterUtil.getSeaCreaturesNewThisMonth();
+CritterUtil.getAllCrittersNewThisMonth = function(isNorthernHemisphere) {
+    const newFish = CritterUtil.getFishNewThisMonth(isNorthernHemisphere);
+    const newBugs = CritterUtil.getBugsNewThisMonth(isNorthernHemisphere);
+    const newSeaCreatures = CritterUtil.getSeaCreaturesNewThisMonth(isNorthernHemisphere);
     return [...newFish, ...newBugs, ...newSeaCreatures];
 }
 

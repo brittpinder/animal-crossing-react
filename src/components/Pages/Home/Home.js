@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 
 import _ from 'lodash/array';
 
@@ -14,7 +15,7 @@ class Home extends Component {
         return (
             <Container>
                 <BlathersMessage month={TimeUtil.getCurrentMonthName()}/>
-                {_.chunk(CritterUtil.getCrittersNewThisMonth(), 3).map((critterGroup, groupIndex) => (
+                {_.chunk(CritterUtil.getAllCrittersNewThisMonth(this.props.isNorthernHemisphere), 3).map((critterGroup, groupIndex) => (
                     <Row key={groupIndex}>
                         {critterGroup.map(critter => (
                             <Col md key={critter.name}>
@@ -28,4 +29,10 @@ class Home extends Component {
     }
 }
 
-export default Home;
+const mapStateToProps = state => {
+    return {
+        isNorthernHemisphere: state.isNorthernHemisphere
+    }
+}
+
+export default connect(mapStateToProps)(Home);
