@@ -2,13 +2,13 @@ import React from 'react'
 
 import styles from './CritterCard.module.css';
 
-import BellPrice from '../../BellPrice/BellPrice';
+import BellPrice from '../BellPrice/BellPrice';
 
 import { Card, Row, Col } from 'react-bootstrap';
 
 const critterCard = (props) => (
     <Card className={styles.CritterCard}>
-        <Card.Img variant="top" src={require("../../../" + props.critter.image)} />
+        <Card.Img variant="top" src={require("../../" + props.critter.image)} />
         <Card.Body>
             <Card.Title>{props.critter.name}</Card.Title>
         </Card.Body>

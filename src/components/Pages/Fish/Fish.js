@@ -1,7 +1,7 @@
 import React from 'react';
 
-import CritterUtil from '../../scripts/critterUtil';
-import CritterTable from '../../components/Tables/CritterTable/CritterTable';
+import CritterUtil from '../../../scripts/critterUtil';
+import CritterTable from '../../../containers/CritterTable/CritterTable';
 
 const Fish = (props) => (
     <React.Fragment>

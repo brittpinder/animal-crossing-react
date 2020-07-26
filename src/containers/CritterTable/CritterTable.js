@@ -8,9 +8,9 @@ import { faCheck } from '@fortawesome/free-solid-svg-icons';
 
 import _ from 'lodash/lang';
 
-import TimeUtil from '../../../scripts/timeUtil';
-import SortDirection from '../SortDirection/SortDirection';
-import Search from '../Search/Search';
+import TimeUtil from '../../scripts/timeUtil';
+import SortDirection from '../../components/Tables/SortDirection/SortDirection';
+import Search from '../../components/Tables/Search/Search';
 
 const sortType = {
     NAME: 'name',
@@ -116,7 +116,7 @@ class CritterTable extends Component {
                         {this.state.filteredCritters.map((critter, index) => (
                             <tr key={critter.name}>
                                 <td>{critter.name}</td>
-                                <td><img src={require("../../../" + critter.image)} alt={critter.name}/></td>
+                                <td><img src={require("../../" + critter.image)} alt={critter.name}/></td>
                                 <td>{critter.price}</td>
                                 {this.props.showLocation ? <td>{critter.location}</td> : null}
                                 <td>{critter.timeText}</td>

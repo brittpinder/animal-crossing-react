@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 
 import _ from 'lodash/array';
 
-import TimeUtil from '../../scripts/timeUtil';
-import CritterUtil from '../../scripts/critterUtil';
-import CritterCard from '../../components/Cards/CritterCard/CritterCard';
-import BlathersMessage from '../../components/BlathersMessage/BlathersMessage';
+import TimeUtil from '../../../scripts/timeUtil';
+import CritterUtil from '../../../scripts/critterUtil';
+import CritterCard from '../../CritterCard/CritterCard';
+import BlathersMessage from '../../BlathersMessage/BlathersMessage';
 
 import { Container, Row, Col } from 'react-bootstrap';
 
