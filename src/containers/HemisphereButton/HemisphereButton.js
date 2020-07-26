@@ -1,23 +1,27 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import * as actionTypes from '../../store/actions';
 
-import Button from 'react-bootstrap/Button'
+import Button from 'react-bootstrap/Button';
 
 class HemisphereButton extends Component {
-    state = {
-        hemisphere: 'North'
-    }
-
-    onClick = () => {
-        const newHemisphere = this.state.hemisphere === 'North' ? 'South' : 'North';
-        this.setState({hemisphere: newHemisphere});
-    }
-
     render() {
         return (
-            <Button onClick={this.onClick}>{this.state.hemisphere}</Button>
+            <Button onClick={this.props.onToggleHemisphere}>{this.props.hemisphere}</Button>
         );
     }
 }
 
-export default HemisphereButton;
+const mapStateToProps = state => {
+    return {
+        hemisphere: state.hemisphere
+    }
+}
 
+const mapDispatchToProps = dispatch => {
+    return {
+        onToggleHemisphere: () => dispatch({type: actionTypes.TOGGLE_HEMISPHERE})
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(HemisphereButton);

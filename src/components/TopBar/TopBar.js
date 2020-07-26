@@ -3,7 +3,7 @@ import React from 'react';
 import styles from './TopBar.module.css';
 
 import { Link } from 'react-router-dom';
-import { Nav, Navbar, Button } from 'react-bootstrap';
+import { Nav, Navbar } from 'react-bootstrap';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLeaf } from '@fortawesome/free-solid-svg-icons';
