@@ -1,0 +1,9 @@
+.HemisphereButton {
+    border-radius: 8px;
+    padding: 8px;
+    margin: 5px 0px;
+}
+
+.HemisphereButton img {
+    width: 30px;
+}
