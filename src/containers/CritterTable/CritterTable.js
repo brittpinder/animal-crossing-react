@@ -14,7 +14,8 @@ import Search from '../../components/Tables/Search/Search';
 
 const sortType = {
     NAME: 'name',
-    PRICE: 'price'
+    PRICE: 'price',
+    LOCATION: 'location'
 }
 
 class CritterTable extends Component {
@@ -54,6 +55,10 @@ class CritterTable extends Component {
 
     onPriceClicked = () => {
         this.sort(sortType.PRICE);
+    }
+
+    onLocationClicked = () => {
+        this.sort(sortType.LOCATION);
     }
 
     onSearchTextChanged = (event) => {
@@ -106,7 +111,10 @@ class CritterTable extends Component {
                                 Price
                                 <SortDirection direction={this.getSortDirection(sortType.PRICE)}/>
                             </th>
-                            {this.props.showLocation ? <th>Location</th> : null}
+                            {this.props.showLocation ? <th onClick={this.onLocationClicked} className={styles.SortableColumn}>
+                                Location
+                                <SortDirection direction={this.getSortDirection(sortType.LOCATION)}/>
+                            </th> : null}
                             <th>Time</th>
                             {monthHeaders}
                         </tr>
