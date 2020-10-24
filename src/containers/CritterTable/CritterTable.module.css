@@ -59,4 +59,5 @@
 
 .SortableColumn:hover {
     background-color: #dbd6ca;
+    cursor: pointer;
 }
