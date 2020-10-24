@@ -4,9 +4,7 @@ import CritterUtil from '../../../scripts/critterUtil';
 import CritterTable from '../../../containers/CritterTable/CritterTable';
 
 const Bugs = (props) => (
-    <React.Fragment>
-        <CritterTable critterData={CritterUtil.bugData} showLocation/>
-    </React.Fragment>
+    <CritterTable critterData={CritterUtil.bugData} showLocation/>
 );
 
 export default Bugs;
