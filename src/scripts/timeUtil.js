@@ -102,6 +102,11 @@ TimeUtil.getLastMonthId = function() {
     return currentMonthId === 1 ? 12 : currentMonthId - 1;
 }
 
+TimeUtil.getNextMonthId = function() {
+    const currentMonthId = this.getCurrentMonthId();
+    return currentMonthId === 12 ? 1 : currentMonthId + 1;
+}
+
 TimeUtil.getSouthMonth = function(northMonthId) {
     let southMonth = northMonthId + 6;
     if (southMonth > 12) {

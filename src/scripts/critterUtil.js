@@ -14,14 +14,33 @@ const initializeCritterData = function(critterData) {
     return critterData;
 }
 
-const getCrittersNewThisMonth = function(critterData, isNorthernHemisphere) {
-    let newCritters = [];
-    const currentMonthId = TimeUtil.getCurrentMonthId();
-    const lastMonthId = TimeUtil.getLastMonthId();
-
+const getCrittersAvailableThisMonth = function(critterData, isNorthernHemisphere) {
+    let critters = [];
     critterData.forEach(function(critter) {
         const months = isNorthernHemisphere ? critter.months : critter.southMonths;
-        if (months.includes(currentMonthId) && !months.includes(lastMonthId)) {
+        if (months.includes(TimeUtil.getCurrentMonthId())) {
+            critters.push(critter);
+        }
+    });
+    return critters;
+}
+
+const getCrittersNewThisMonth = function(critterData, isNorthernHemisphere) {
+    let newCritters = [];
+    critterData.forEach(function(critter) {
+        const months = isNorthernHemisphere ? critter.months : critter.southMonths;
+        if (months.includes(TimeUtil.getCurrentMonthId()) && !months.includes(TimeUtil.getLastMonthId())) {
+            newCritters.push(critter);
+        }
+    });
+    return newCritters;
+}
+
+const getCrittersLeavingAfterThisMonth = function(critterData, isNorthernHemisphere) {
+    let newCritters = [];
+    critterData.forEach(function(critter) {
+        const months = isNorthernHemisphere ? critter.months : critter.southMonths;
+        if (months.includes(TimeUtil.getCurrentMonthId()) && !months.includes(TimeUtil.getNextMonthId())) {
             newCritters.push(critter);
         }
     });
@@ -38,23 +57,33 @@ seaCreatureData.forEach(function(seaCreature) {
     seaCreature.location = "Sea";
 });
 
-CritterUtil.getFishNewThisMonth = function(isNorthernHemisphere) {
-    return getCrittersNewThisMonth(CritterUtil.fishData, isNorthernHemisphere);
+CritterUtil.AvailabilityType = {
+    ALL: 'all',
+    NEW: 'new',
+    LEAVING: 'leaving'
 }
 
-CritterUtil.getBugsNewThisMonth = function(isNorthernHemisphere) {
-    return getCrittersNewThisMonth(CritterUtil.bugData, isNorthernHemisphere);
+CritterUtil.CritterType = {
+    FISH: 'fish',
+    BUGS: 'bugs',
+    SEA_CREATURES: 'seaCreatures'
 }
 
-CritterUtil.getSeaCreaturesNewThisMonth = function(isNorthernHemisphere) {
-    return getCrittersNewThisMonth(CritterUtil.seaCreatureData, isNorthernHemisphere);
-}
-
-CritterUtil.getAllCrittersNewThisMonth = function(isNorthernHemisphere) {
-    const newFish = CritterUtil.getFishNewThisMonth(isNorthernHemisphere);
-    const newBugs = CritterUtil.getBugsNewThisMonth(isNorthernHemisphere);
-    const newSeaCreatures = CritterUtil.getSeaCreaturesNewThisMonth(isNorthernHemisphere);
-    return [...newFish, ...newBugs, ...newSeaCreatures];
+CritterUtil.getCrittersForAvailabilityType = function(critterType, availabilityType, isNorthernHemisphere) {
+    let critters = CritterUtil.fishData;
+    if (critterType === CritterUtil.CritterType.BUGS) {
+        critters = CritterUtil.bugData;
+    } else if (critterType === CritterUtil.CritterType.SEA_CREATURES) {
+        critters = CritterUtil.seaCreatureData;
+    }
+    switch (availabilityType) {
+        case CritterUtil.AvailabilityType.NEW:
+            return getCrittersNewThisMonth(critters, isNorthernHemisphere);
+        case CritterUtil.AvailabilityType.LEAVING:
+            return getCrittersLeavingAfterThisMonth(critters, isNorthernHemisphere);
+        default:
+            return getCrittersAvailableThisMonth(critters, isNorthernHemisphere);
+    }
 }
 
 export default CritterUtil;
