@@ -34,6 +34,10 @@ CritterUtil.fishData = initializeCritterData(fishData);
 CritterUtil.bugData = initializeCritterData(bugData);
 CritterUtil.seaCreatureData = initializeCritterData(seaCreatureData);
 
+seaCreatureData.forEach(function(seaCreature) {
+    seaCreature.location = "Sea";
+});
+
 CritterUtil.getFishNewThisMonth = function(isNorthernHemisphere) {
     return getCrittersNewThisMonth(CritterUtil.fishData, isNorthernHemisphere);
 }
