@@ -43,13 +43,7 @@ class CritterTable extends Component {
     }
 
     filterAndSort = (text) => {
-        let filteredCritters = [];
-        const filterText = text.toLowerCase();
-        for (const critter of this.props.critterData) {
-            if (critter.name.toLowerCase().includes(filterText)) {
-                filteredCritters.push(critter);
-            }
-        }
+        const filteredCritters = this.props.critterData.filter(critter => critter.name.toLowerCase().includes(text.toLowerCase()));
         this.sortArray(filteredCritters, this.state.ascending, this.state.sortingType);
         this.setState({filteredCritters: filteredCritters});
     }
