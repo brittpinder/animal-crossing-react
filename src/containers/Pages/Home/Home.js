@@ -12,6 +12,9 @@ import HomeFilters from '../../../components/Pages/Home/HomeFilters/HomeFilters'
 import styles from './Home.module.css';
 import { Container, Row, Col } from 'react-bootstrap';
 
+import "animate.css/animate.min.css";
+import ScrollAnimation from 'react-animate-on-scroll';
+
 function shuffle(array) {
     var currentIndex = array.length, temporaryValue, randomIndex;
 
@@ -105,7 +108,9 @@ class Home extends Component {
                             {critterGroup.length === 1 ? <Col></Col> : null}
                             {critterGroup.map(critter => (
                                 <Col md key={critter.name}>
-                                    <CritterCard critter={critter} />
+                                    <ScrollAnimation animateOnce animateIn="animate__slideInUp">
+                                        <CritterCard critter={critter} />
+                                    </ScrollAnimation>
                                 </Col>
                             ))}
                             {critterGroup.length < 3 ? <Col></Col> : null}
