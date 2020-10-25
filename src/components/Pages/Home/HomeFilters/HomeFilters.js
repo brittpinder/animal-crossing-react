@@ -1,82 +1,88 @@
 import React from 'react';
 
 import CritterUtil from '../../../../scripts/critterUtil.js';
-import TimeUtil from '../../../../scripts/timeUtil.js';
+import CritterButton from '../../../CritterButton/CritterButton.js';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCalendarAlt } from '@fortawesome/free-solid-svg-icons';
 
 import styles from './HomeFilters.module.css';
-import { Row, Col, ButtonGroup, Button, Form } from 'react-bootstrap';
+import { Row, Col, Dropdown, DropdownButton } from 'react-bootstrap';
 
-const HomeFilters = (props) => {
-    const currentMonth = TimeUtil.getCurrentMonthName();
+let getDropdownTextForAvailabilityType = (availabilityType) => {
+    switch (availabilityType) {
+        case CritterUtil.AvailabilityType.ALL:
+            return "This month";
+        case CritterUtil.AvailabilityType.NEW:
+            return "New this month";
+        case CritterUtil.AvailabilityType.LEAVING:
+            return "Leaving next month";
+        default:
+            return "";
+    }
+}
+
+const homeFilters = (props) => {
+    const dropdownInfo = [
+        {
+            availabilityType: CritterUtil.AvailabilityType.ALL
+        },
+        {
+            availabilityType: CritterUtil.AvailabilityType.NEW
+        },
+        {
+            availabilityType: CritterUtil.AvailabilityType.LEAVING
+        }
+    ];
+
     const buttonInfo = [
         {
-            availabilityType: CritterUtil.AvailabilityType.ALL,
-            text: "All in " + currentMonth
+            type: CritterUtil.CritterType.FISH,
+            active: props.showFish
         },
         {
-            availabilityType: CritterUtil.AvailabilityType.NEW,
-            text: "New in " + currentMonth
+            type: CritterUtil.CritterType.BUGS,
+            active: props.showBugs
         },
         {
-            availabilityType: CritterUtil.AvailabilityType.LEAVING,
-            text: "Leaving after " + currentMonth
-        }
-    ];
-    const checkboxInfo = [
-        {
-            name: "showFish",
-            checked: props.showFish,
-            label: "Fish"
-        },
-        {
-            name: "showBugs",
-            checked: props.showBugs,
-            label: "Bugs"
-        },
-        {
-            name: "showSeaCreatures",
-            checked: props.showSeaCreatures,
-            label: "Sea Creatures"
+            type: CritterUtil.CritterType.SEA_CREATURES,
+            active: props.showSeaCreatures
         }
     ];
 
+    const dropdownTitle = <span><FontAwesomeIcon icon={faCalendarAlt} className={styles.CalendarIcon}/>{getDropdownTextForAvailabilityType(props.availabilityType)}</span>;
+    
     return (
         <div className={styles.HomeFilters}>
             <Row>
-                <Col align="center" className={styles.MonthButtonGroup}>
-                    <ButtonGroup className="d-flex">
-                        {buttonInfo.map((info, index) => (
-                            <Button
-                                key={index}
-                                active={props.availabilityType === info.availabilityType ? true : undefined}
-                                onClick={() => props.handleAvailabilityTypeSelected(info.availabilityType)}
-                            >
-                                {info.text}
-                            </Button>
-                        ))}
-                    </ButtonGroup>
-                </Col>
-            </Row>
-            <Row>
-                <Col align="center">
-                    <span key={`inline-checkbox`}>
-                        {checkboxInfo.map((info, index) => (
-                            <Form.Check
-                                inline
-                                key={index}
-                                label={info.label}
-                                type="checkbox"
-                                checked={info.checked}
-                                name={info.name}
-                                onChange={props.handleCheckboxChanged}
-                                className={styles.Checkbox}
+                <Col>
+                    {buttonInfo.map((critterInfo, index) => (
+                        <span key={index} className={styles.CritterButton}>
+                            <CritterButton
+                                className={styles.CritterButton}
+                                active={critterInfo.active ? true : undefined}
+                                critterType={critterInfo.type}
+                                handleCritterButtonClicked={props.handleCritterButtonClicked}
                             />
+                        </span>
+                    ))}
+                </Col>
+                <Col className={styles.DropdownContainer}>
+                    <DropdownButton
+                        id="dropdown-basic-button"
+                        title={dropdownTitle}
+                        onSelect={props.handleAvailabilityTypeSelected}
+                        variant="light"
+                        size="lg"
+                    >
+                        {dropdownInfo.map((info, index) => (
+                            <Dropdown.Item key={index} eventKey={info.availabilityType}>{getDropdownTextForAvailabilityType(info.availabilityType)}</Dropdown.Item>
                         ))}
-                    </span>
+                    </DropdownButton>
                 </Col>
             </Row>
         </div>
     );
 }
 
-export default HomeFilters;
+export default homeFilters;

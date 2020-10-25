@@ -1,0 +1,18 @@
+.CritterButton {
+    border-radius: 100px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: rgba(254, 248, 228, 0.6);
+}
+
+.CritterButton>img {
+    width: 60%;
+}
+
+.Active {
+    background-color: #fef8e4;
+}
