@@ -12,6 +12,20 @@ import HomeFilters from './HomeFilters/HomeFilters';
 import styles from './Home.module.css';
 import { Container, Row, Col } from 'react-bootstrap';
 
+function shuffle(array) {
+    var currentIndex = array.length, temporaryValue, randomIndex;
+
+    while (0 !== currentIndex) {
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex -= 1;
+        temporaryValue = array[currentIndex];
+        array[currentIndex] = array[randomIndex];
+        array[randomIndex] = temporaryValue;
+    }
+
+    return array;
+}
+
 class Home extends Component {
     state = {
         availabilityType: CritterUtil.AvailabilityType.ALL,
@@ -21,7 +35,9 @@ class Home extends Component {
     }
 
     handleAvailabilityTypeSelected = (availabilitySelection) => {
-        this.setState({availabilityType: availabilitySelection});
+        if (availabilitySelection != this.state.availabilityType) {
+            this.setState({availabilityType: availabilitySelection});
+        }
     }
 
     handleCritterButtonClicked = (critterType) => {
@@ -63,7 +79,7 @@ class Home extends Component {
         if (this.state.showSeaCreatures) {
             crittersToDisplay = [...crittersToDisplay, ...CritterUtil.getCrittersForAvailabilityType(CritterUtil.CritterType.SEA_CREATURES, this.state.availabilityType, this.props.isNorthernHemisphere)];
         }
-        return crittersToDisplay;
+        return shuffle(crittersToDisplay);
     }
 
     render() {

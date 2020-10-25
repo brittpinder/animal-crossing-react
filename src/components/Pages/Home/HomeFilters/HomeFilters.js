@@ -51,7 +51,7 @@ const homeFilters = (props) => {
     ];
 
     const dropdownTitle = <span><FontAwesomeIcon icon={faCalendarAlt} className={styles.CalendarIcon}/>{getDropdownTextForAvailabilityType(props.availabilityType)}</span>;
-    
+
     return (
         <div className={styles.HomeFilters}>
             <Row>
