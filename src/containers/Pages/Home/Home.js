@@ -5,9 +5,9 @@ import _ from 'lodash/array';
 
 import TimeUtil from '../../../scripts/timeUtil';
 import CritterUtil from '../../../scripts/critterUtil';
-import CritterCard from '../../CritterCard/CritterCard';
-import BlathersMessage from '../../BlathersMessage/BlathersMessage';
-import HomeFilters from './HomeFilters/HomeFilters';
+import CritterCard from '../../../components/CritterCard/CritterCard';
+import BlathersMessage from '../../../components/BlathersMessage/BlathersMessage';
+import HomeFilters from '../../../components/Pages/Home/HomeFilters/HomeFilters';
 
 import styles from './Home.module.css';
 import { Container, Row, Col } from 'react-bootstrap';

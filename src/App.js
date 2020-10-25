@@ -7,7 +7,7 @@ import { Route, Switch, Redirect } from 'react-router-dom';
 import Container from 'react-bootstrap/Container'
 import TopBar from './components/TopBar/TopBar';
 import Footer from './components/Footer/Footer';
-import Home from './components/Pages/Home/Home';
+import Home from './containers/Pages/Home/Home';
 import Fish from './components/Pages/Fish/Fish';
 import Bugs from './components/Pages/Bugs/Bugs';
 import SeaCreatures from './components/Pages/SeaCreatures/SeaCreatures';
